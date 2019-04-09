@@ -17,11 +17,15 @@ const loadable = loader =>
 const routes = [
   // Dashboards
   {
+    path: '/',
+    component: loadable(() => import('pages/dashboard/alpha')),
+  },
+  {
     path: '/home',
     component: loadable(() => import('pages/dashboard/alpha')),
   },
   {
-    path: '/forms/:id',
+    path: '/forms',
     component: loadable(() => import('pages/dashboard/alpha')),
   },
   {
@@ -41,7 +45,7 @@ class Router extends React.Component {
       <ConnectedRouter history={history}>
         <IndexLayout>
           <Switch>
-            <Route exact path="/" render={() => <Redirect to="/dashboard/alpha" />} />
+            <Route exact path="/" render={() => <Redirect to="/" />} />
             {routes.map(route => (
               <Route
                 path={route.path}

@@ -241,12 +241,6 @@ class MenuLeft extends React.Component {
           >
             {menu}
           </Menu>
-          <div className={styles.buyPro}>
-            <p>
-              <strong>More components, more styles, more themes, and premium support!</strong>
-            </p>
-            
-          </div>
         </Scrollbars>
       </Sider>
     )
