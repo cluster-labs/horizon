@@ -1,0 +1,44 @@
+@import 'assets/styles/mixins.scss';
+
+.footer {
+  max-width: rem(1560);
+  margin: 0 auto;
+}
+
+.inner {
+  padding: rem(40) rem(30) rem(30);
+  margin: rem(0) rem(30) 0;
+  border-radius: 5px 5px 0 0;
+  color: $text-darken-more;
+  background: $gray-border;
+  @media (max-width: $sm-max-width) {
+    margin: 0 rem(10) !important;
+  }
+}
+
+.bottom {
+  border-top: 1px solid $gray;
+  padding-top: rem(20);
+  margin-top: rem(10);
+}
+
+.copyright {
+  float: right;
+  position: relative;
+
+  @media (max-width: $xs-max-width) {
+    margin-top: rem(20);
+    float: none;
+  }
+
+  img {
+    float: left;
+    width: 30px;
+    position: absolute;
+    top: 6px;
+  }
+  span {
+    display: block;
+    margin-left: 50px;
+  }
+}

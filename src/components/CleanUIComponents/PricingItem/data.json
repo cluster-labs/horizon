@@ -1,0 +1,36 @@
+{
+  "item": {
+    "currency": "$",
+    "amount": "40",
+    "period": "/ mo",
+    "title": "Standart",
+    "features": [
+      {
+        "id": 1,
+        "main": "10GB",
+        "descr": "of Bandwidth"
+      },
+      {
+        "id": 2,
+        "main": "200MB",
+        "descr": "Max File Size"
+      },
+      {
+        "id": 3,
+        "main": "2GHZ",
+        "descr": "CPU"
+      },
+      {
+        "id": 4,
+        "main": "256MB",
+        "descr": "Memory"
+      },
+      {
+        "id": 5,
+        "main": "1 GB",
+        "descr": "Storage"
+      }
+    ],
+    "btnText": "Buy Item"
+  }
+}

@@ -1,0 +1,58 @@
+@import 'assets/styles/mixins.scss';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/* TABS */
+
+.nav-tabs-horizontal {
+  .nav-tabs {
+    border-bottom: 1px solid $gray-border;
+    .nav-item {
+      margin-bottom: -2px;
+      cursor: pointer;
+      .nav-link {
+        border: none;
+        border-bottom: 3px solid transparent;
+        &.active,
+        &:focus {
+          border-bottom-color: $primary !important;
+        }
+        &:hover {
+          border-bottom-color: $gray-darken;
+        }
+      }
+    }
+  }
+}
+
+.nav-tabs-vertical {
+  &:after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+  .nav-tabs {
+    border-bottom: none;
+    border-right: 1px solid $gray-border;
+    float: left;
+    margin-right: 30px;
+    display: block;
+    .nav-item {
+      margin: 0 -2px 1px 0;
+      float: none;
+      cursor: pointer;
+      .nav-link {
+        border: none;
+        border-right: 3px solid transparent;
+        padding-left: 0;
+        border-radius: 0;
+        &.active,
+        &:focus {
+          border-right-color: $primary !important;
+        }
+        &:hover {
+          border-right-color: $gray-darken;
+        }
+      }
+    }
+  }
+}

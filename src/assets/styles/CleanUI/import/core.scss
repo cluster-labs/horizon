@@ -1,0 +1,92 @@
+@import 'assets/styles/mixins.scss';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  CORE MODULE STYLES */
+
+html {
+  font-size: 13px;
+  overflow-y: scroll;
+  @media (max-width: $sm-max-width) {
+    font-size: 12px;
+  }
+}
+
+body {
+  font-family: $base__font-family;
+  color: $text-darken-more;
+  background: $gray-lighten-more;
+  line-height: 1.7;
+  @media (max-width: $sm-max-width) {
+    font-size: 12px;
+  }
+}
+
+svg {
+  vertical-align: baseline;
+  overflow: auto;
+}
+
+a {
+  text-decoration: none;
+  color: $text;
+  @include transition-color();
+  &:hover,
+  &:active,
+  &:focus {
+    color: $blue;
+    text-decoration: none;
+  }
+}
+
+input {
+  outline: none !important;
+  font-family: $base__font-family;
+  color: $text-darken-more;
+}
+
+button,
+input {
+  box-shadow: none !important;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'],
+textarea {
+  appearance: none !important;
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0 50px white inset !important;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+// code element
+code {
+  color: $text;
+  background: $gray-lighten-more;
+  display: inline-block;
+  padding: rem(2) rem(5);
+  border-radius: 3px;
+}
+
+// pre element
+pre {
+  color: $text;
+  padding: rem(20);
+  border-radius: 3px;
+  border: 1px solid $gray-border;
+  background: $gray-lighten-more;
+}
+
+// ant design font overrides
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}

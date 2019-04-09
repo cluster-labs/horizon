@@ -1,0 +1,148 @@
+{
+  "progressCardsData" : [
+    {
+      "title": "Total Profit",
+      "note": "Profit",
+      "currentValue": "$18M",
+      "percent": "78",
+      "dataColor": "#007bff"
+    },
+    {
+      "title": "Feedbacks",
+      "note": "Customer review",
+      "currentValue": "134",
+      "percent": "89",
+      "dataColor": "#46be8a"
+    },
+    {
+      "title": "New Orders",
+      "note": "Orders progress",
+      "currentValue": "160",
+      "percent": "55",
+      "dataColor": "#fb434a"
+    },
+    {
+      "title": "New Users",
+      "note": "Joined Users",
+      "currentValue": "382",
+      "percent": "77",
+      "dataColor": "#acb7bf"
+    }
+  ],
+  "newUsersData": [{
+    "img": "resources/images/avatars/5.jpg",
+    "name": "Anna Strong",
+    "note": "Visual Designer, Google Inc"
+  }, {
+    "img": "resources/images/avatars/1.jpg",
+    "name": "William Vargas",
+    "note": "Visual Designer, Mediatec"
+  }, {
+    "img": "resources/images/avatars/4.jpg",
+    "name": "John Faries",
+    "note": "Project Manager, Google Inc"
+  }, {
+    "img": "resources/images/avatars/2.jpg",
+    "name": "Dana Porter",
+    "note": "Developer, Twitter Inc"
+  }, {
+    "img": "resources/images/avatars/3.jpg",
+    "name": "Cesara Lawson",
+    "note": "Developer, Facebook Inc"
+  }, {
+    "img": "resources/images/avatars/4.jpg",
+    "name": "Matt Faries",
+    "note": "Project Manager, Google Inc"
+  }, {
+    "img": "resources/images/avatars/2.jpg",
+    "name": "Danala Porter",
+    "note": "Developer, Twitter Inc"
+  }, {
+    "img": "resources/images/avatars/3.jpg",
+    "name": "Mattew Lawson",
+    "note": "Developer, Facebook Inc"
+  }],
+  "inboundBandwidthData": {
+    "series": [
+      [232, 111, 138, 144, 118, 210, 236]
+    ]
+  },
+  "outboundBandwidthData": {
+    "series": [
+      [3, 14, 37, 26, 48, 8, 63, 21, 24, 52]
+    ]
+  },
+  "topPhotosGraphData":  {
+    "series": [
+      [51, 8, 50, 45, 95, 90, 43, 13, 37, 82]
+    ]
+  },
+  "topPhotosData": [{
+    "img": "resources/images/photos/1.jpeg",
+    "name": "Serene mountains",
+    "note": "Author: Anna Strong",
+    "actionData": "+1000$",
+    "actionDataColor": "#dc3545 "
+  }, {
+    "img": "resources/images/photos/2.jpeg",
+    "name": "The beauty of the lilies",
+    "note": "Author: William Vargas",
+    "actionData": "+750$",
+    "actionDataColor": "#ffc107"
+  }, {
+    "img": "resources/images/photos/3.jpeg",
+    "name": "At full power",
+    "note": "Author: John Faries",
+    "actionData": "+500$",
+    "actionDataColor": "#acb7bf"
+  }],
+  "financeStatsData": [{
+    "name": "IPO Margin",
+    "note": "Awerage IPO Margin",
+    "actionData": "+36%",
+    "actionDataColor": "#28a745"
+  }, {
+    "name": "Payments",
+    "note": "Yearly Expenses",
+    "actionData": "-235$",
+    "actionDataColor": "#dc3545"
+  }, {
+    "name": "Logistics",
+    "note": "Overall Regional Logistics",
+    "actionData": "+37%",
+    "actionDataColor": "#ffc107"
+  }, {
+    "name": "Expenses",
+    "note": "Balance",
+    "actionData": "+1623$",
+    "actionDataColor": "#007bff"
+  }],
+  "supportCasesTableData": [{
+    "key": "1",
+    "type": "EPS",
+    "amount": "+12,42%"
+  }, {
+    "key": "2",
+    "type": "PDO",
+    "amount": "21,700"
+  }, {
+    "key": "3",
+    "type": "OPL Status",
+    "amount": "Negative"
+  }, {
+    "key": "4",
+    "type": "Priority",
+    "amount": "+235,200"
+  }, {
+    "key": "5",
+    "type": "Net Prifit",
+    "amount": "$19,235,516"
+  }],
+  "supportCasesPieData": {
+    "series": [
+      {"name": "Ready", "value": 65},
+      {"name": "In progress", "value": 25},
+      {"name": "Defected", "value": 10}
+    ]
+  }
+}

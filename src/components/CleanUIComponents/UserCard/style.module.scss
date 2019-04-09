@@ -1,0 +1,62 @@
+@import 'assets/styles/mixins.scss';
+
+.userCard {
+  background: $white;
+  position: relative;
+  border-radius: 0.25rem;
+  border: 1px solid $gray-border;
+  text-align: center;
+  @media (max-width: $md-max-width) {
+    margin-bottom: 1.35rem;
+  }
+}
+
+.typed {
+  .userName {
+    color: $white;
+  }
+
+  .post {
+    color: $white;
+  }
+}
+
+.post {
+  color: $text-lighten;
+}
+
+.plusBtn {
+  font-size: 0;
+  background-color: $white;
+  position: absolute;
+  top: rem(20);
+  right: rem(20);
+  width: rem(21);
+  height: rem(21);
+  border: 1px solid $gray;
+  border-radius: 500px;
+  cursor: pointer;
+  opacity: 0.7;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: rem(3);
+    left: rem(9);
+    height: rem(13);
+    width: 1px;
+    background: $gray;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    width: rem(13);
+    height: 1px;
+    left: rem(3);
+    top: rem(9);
+    background: $gray;
+  }
+  &:hover {
+    opacity: 1;
+  }
+}

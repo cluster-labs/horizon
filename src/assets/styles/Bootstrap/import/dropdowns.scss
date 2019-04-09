@@ -1,0 +1,168 @@
+@import 'assets/styles/mixins.scss';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/* DROPDOWNS */
+
+.dropdown-menu {
+  border-color: $gray;
+  top: 115%;
+  padding: rem(8) 0;
+  .dropdown-icon {
+    margin-right: rem(5);
+  }
+  .dropdown-divider {
+    background-color: $gray-border;
+  }
+  .dropdown-header {
+    padding: rem(7) rem(15);
+    color: $text-darken;
+    font-size: rem(13);
+    font-weight: 600;
+  }
+  .dropdown-item {
+    color: $text;
+    background: none;
+    padding: rem(3) rem(15);
+    @include transition-color();
+    a {
+      color: $text;
+      &:hover,
+      &:active {
+        background: none;
+        color: $blue;
+      }
+    }
+    &.disabled {
+      cursor: not-allowed;
+      color: $gray-border !important;
+      a {
+        color: $gray-border !important;
+        cursor: not-allowed;
+      }
+    }
+    &.active {
+      background: $gray-lighten !important;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      background: none;
+      color: $blue;
+    }
+  }
+}
+
+.dropdown-animate {
+  overflow: hidden;
+  > .dropdown-item,
+  .dropdown-header {
+    animation-name: dropdown-slide-left;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    &:nth-child(1) {
+      animation-delay: 0.02s;
+    }
+    &:nth-child(2) {
+      animation-delay: 0.04s;
+    }
+    &:nth-child(3) {
+      animation-delay: 0.06s;
+    }
+    &:nth-child(4) {
+      animation-delay: 0.08s;
+    }
+    &:nth-child(5) {
+      animation-delay: 0.1s;
+    }
+    &:nth-child(6) {
+      animation-delay: 0.12s;
+    }
+    &:nth-child(7) {
+      animation-delay: 0.14s;
+    }
+    &:nth-child(8) {
+      animation-delay: 0.16s;
+    }
+    &:nth-child(9) {
+      animation-delay: 0.18s;
+    }
+    &:nth-child(10) {
+      animation-delay: 0.2s;
+    }
+  }
+}
+
+.show,
+.dropdown-menu.open {
+  > .dropdown-menu {
+    animation-name: dropdown-slide-bottom;
+    animation-duration: 0.15s;
+    animation-fill-mode: both;
+    animation-delay: 0.05s;
+    display: block;
+  }
+  &.dropup {
+    > .dropdown-menu {
+      animation-name: dropdown-slide-top;
+    }
+  }
+}
+
+.dropdown {
+  .dropdown-toggle {
+    position: relative;
+    &:after {
+      margin-top: rem(-1);
+      color: $gray;
+      @include transition-color();
+    }
+    > i {
+      color: $gray;
+      @include transition-color();
+    }
+  }
+  &:hover,
+  &.show {
+    .dropdown-toggle {
+      > i {
+        color: $gray-darken;
+      }
+      &:after {
+        color: $gray-darken;
+      }
+    }
+  }
+}
+
+@keyframes dropdown-slide-left {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes dropdown-slide-bottom {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -5px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes dropdown-slide-top {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 5px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

@@ -1,0 +1,62 @@
+@import 'assets/styles/mixins.scss';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/* TOOLTIPS & POPOVERS */
+
+.popover {
+  border-color: $gray;
+  .popover-inner {
+    border-width: rem(8);
+    &:after {
+      border-width: rem(7);
+    }
+  }
+  &.left:before,
+  &.bs-tether-element-attached-left:before {
+    border-right-color: $gray;
+  }
+  &.right:before,
+  &.bs-tether-element-attached-right:before {
+    border-left-color: $gray;
+  }
+  &.top:before,
+  &.bs-tether-element-attached-top:before {
+    border-bottom-color: $gray;
+  }
+  &.bottom:before,
+  &.bs-tether-element-attached-bottom:before {
+    border-top-color: $gray;
+  }
+  .popover-title {
+    font-weight: 600;
+    background: $gray-lighten-more;
+    margin: -1px;
+    padding: rem(8) rem(15);
+    border-radius: 3px 3px 0 0;
+  }
+}
+
+.tooltip {
+  .tooltip-inner {
+    background: $black-lighten;
+    padding: rem(4) rem(15);
+    color: $white;
+    font-size: rem(13);
+  }
+  &.left .tooltip-inner:before,
+  &.bs-tether-element-attached-left .tooltip-inner:before {
+    border-right-color: $black-lighten;
+  }
+  &.right .tooltip-inner:before,
+  &.bs-tether-element-attached-right .tooltip-inner:before {
+    border-left-color: $black-lighten;
+  }
+  &.top .tooltip-inner:before,
+  &.bs-tether-element-attached-top .tooltip-inner:before {
+    border-bottom-color: $black-lighten;
+  }
+  &.bottom .tooltip-inner:before,
+  &.bs-tether-element-attached-bottom .tooltip-inner:before {
+    border-top-color: $black-lighten;
+  }
+}

@@ -1,0 +1,23 @@
+@import 'assets/styles/mixins.scss';
+
+.block {
+  padding: rem(20) rem(30) rem(5) rem(30);
+  border-radius: 5px;
+  border: 1px solid $gray-border;
+  margin-bottom: rem(30);
+}
+
+.label {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: rem(16);
+  margin-bottom: rem(15);
+}
+
+.item {
+  margin-bottom: rem(15);
+}
+
+.itemTitle {
+  margin-bottom: rem(3);
+}

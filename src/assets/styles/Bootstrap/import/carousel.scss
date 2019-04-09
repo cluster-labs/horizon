@@ -1,0 +1,15 @@
+@import 'assets/styles/mixins.scss';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/* CAROUSEL */
+
+.carousel-indicators {
+  li {
+    background: $gray-lighten;
+    opacity: 0.5;
+    &.active {
+      opacity: 1;
+      background: $gray-lighten;
+    }
+  }
+}

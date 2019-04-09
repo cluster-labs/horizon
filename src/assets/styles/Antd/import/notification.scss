@@ -1,0 +1,9 @@
+// Import mixins
+@import 'assets/styles/mixins.scss';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  ANT DESIGN NOTIFICATION */
+
+.ant-notification {
+  max-width: calc(100vw - 48px);
+}

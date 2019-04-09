@@ -1,0 +1,98 @@
+{
+  "name": "clean-ui-admin-template-cra",
+  "version": "2.1.1",
+  "private": true,
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "lint-staged": "lint-staged",
+    "prettier": "prettier --write \"src/**/*.{js,jsx,ts,tsx,scss,less}\"",
+    "eslint": "eslint --ext .js,jsx src",
+    "tslint": "tslint \"src/**/*.{ts,tsx}\"",
+    "stylelint": "stylelint \"src/**/*.{scss,less}\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,scss,less}": [
+      "prettier --write",
+      "git add"
+    ],
+    "src/**/*.{js,jsx}": [
+      "eslint"
+    ],
+    "src/**/*.{scss,less}": [
+      "stylelint"
+    ]
+  },
+  "dependencies": {
+    "@rowno/sparkline": "^3.0.1",
+    "antd": "^3.13.2",
+    "bootstrap-css-only": "^4.2.1",
+    "chart.js": "^2.7.3",
+    "chartist": "^0.11.0",
+    "chartist-plugin-tooltips-updated": "^0.0.20",
+    "classnames": "^2.2.6",
+    "connected-react-router": "^6.3.1",
+    "d3-dsv": "^1.1.1",
+    "d3-format": "^1.3.2",
+    "d3-time-format": "^2.1.3",
+    "enquire-js": "^0.2.1",
+    "firebase": "^5.8.2",
+    "history": "^4.7.2",
+    "lodash": "^4.17.11",
+    "nprogress": "^0.2.0",
+    "peity-react": "^0.0.7",
+    "prop-types": "^15.7.1",
+    "qs": "^6.6.0",
+    "rc-drawer": "^1.7.7",
+    "react": "^16.8.1",
+    "react-c3js": "^0.1.20",
+    "react-chartist": "^0.13.3",
+    "react-chartjs-2": "^2.7.4",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "^16.8.1",
+    "react-draft-wysiwyg": "^1.13.1",
+    "react-helmet": "^5.2.0",
+    "react-intl": "^2.8.0",
+    "react-loadable": "^5.5.0",
+    "react-redux": "^6.0.0",
+    "react-redux-spinner": "^2.0.0",
+    "react-router": "^4.3",
+    "react-router-dom": "^4.3.1",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "2.1.5",
+    "react-stockcharts": "^0.7.8",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^1.0.1",
+    "redux-thunk": "^2.3.0",
+    "store": "^2.0.12"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.3.0",
+    "babel-plugin-import": "^1.11.0",
+    "customize-cra": "^0.2.11",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "husky": "^1.3.1",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "lint-staged": "^8.1.3",
+    "node-sass": "^4.11.0",
+    "react-app-rewired": "^2.1.0",
+    "stylelint": "^9.10.1",
+    "stylelint-config-prettier": "^4.0.0",
+    "stylelint-config-standard": "^18.2.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

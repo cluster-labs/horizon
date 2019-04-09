@@ -1,0 +1,32 @@
+// Import mixins
+@import 'assets/styles/mixins.scss';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  ANT DESIGN FORM */
+
+.ant-form input[type='file'] {
+  min-height: 40px;
+}
+
+.ant-form input.ant-input-sm[type='file'] {
+  min-height: 48px;
+}
+
+.ant-form input.ant-input-lg[type='file'] {
+  min-height: 52px;
+}
+
+.ant-form-item-label {
+  text-align: left;
+  white-space: normal;
+}
+
+.ant-form-item > .ant-form-item,
+.ant-form-item :not(.ant-form) > .ant-form-item {
+  margin-top: -2px;
+}
+
+form .ant-select:only-child,
+form .ant-cascader-picker:only-child {
+  display: inline-block;
+}

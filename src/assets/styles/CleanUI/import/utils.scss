@@ -1,0 +1,115 @@
+@import 'assets/styles/mixins.scss';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  CORE COMPONENTS & UTILITIES */
+
+.utils {
+  &__visibilityHidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+  }
+
+  // main container
+  &__content {
+    padding: rem(30);
+    max-width: rem(1560);
+    margin: 0 auto;
+
+    @media (max-width: $sm-max-width) {
+      padding: rem(30) rem(10) !important;
+      overflow-x: hidden;
+    }
+  }
+
+  &__title {
+    font-size: rem(17);
+    color: $black;
+  }
+
+  &__titleDescription {
+    color: $text-lighten;
+  }
+
+  // scrollable block
+  &__scrollable {
+    overflow: auto;
+  }
+
+  // example block
+  &__example {
+    padding: rem(25);
+    border: 1px solid $gray-border;
+    &:before {
+      content: 'EXAMPLE';
+      display: block;
+      margin-bottom: rem(15);
+      color: $text;
+    }
+  }
+
+  // links
+  &__link {
+    &--underlined {
+      border-bottom: 1px solid rgba($black-lighten-more, 0.25);
+      &:hover {
+        border-bottom-color: rgba($blue, 0.2);
+      }
+    }
+    &--blue {
+      color: $blue;
+      &:hover {
+        color: $blue-darken;
+      }
+      &.link-underlined {
+        border-bottom: 1px solid rgba($blue, 0.25);
+        &:hover {
+          border-bottom-color: rgba($blue, 0.2);
+        }
+      }
+    }
+  }
+
+  // icons block
+  &__iconsBlock {
+    padding: 0 0 rem(30);
+    text-align: center;
+    p {
+      height: rem(30);
+    }
+    li {
+      text-align: center;
+      display: inline-block;
+      width: rem(40);
+      height: rem(40);
+      line-height: rem(40);
+      font-size: rem(36);
+      padding: rem(10) rem(30);
+      box-sizing: content-box;
+      border-radius: 3px;
+      background: $gray-lighten;
+      margin: rem(10);
+      &:hover {
+        background: $black-lighten;
+        color: $white;
+      }
+    }
+    .tooltip {
+      font-size: rem(18);
+    }
+  }
+
+  &__scrollTable {
+    white-space: nowrap !important;
+    .ant-table-body {
+      overflow-x: auto !important;
+    }
+  }
+}

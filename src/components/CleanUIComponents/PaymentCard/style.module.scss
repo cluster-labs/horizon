@@ -1,0 +1,68 @@
+@import 'assets/styles/mixins.scss';
+
+.paymentCard {
+  padding: rem(30) rem(30);
+  position: relative;
+}
+
+.icon {
+  text-align: center;
+  margin-bottom: rem(15);
+  i {
+    font-size: rem(54);
+    color: $gray-darken;
+  }
+}
+
+.name {
+  display: block;
+  text-align: center;
+  font-size: rem(21);
+  color: $black;
+  font-weight: bold;
+}
+
+.number {
+  display: block;
+  text-align: center;
+  font-size: rem(16);
+  color: $text;
+  margin-bottom: rem(20);
+}
+
+.type {
+  display: block;
+  text-align: center;
+  font-size: rem(16);
+  margin-bottom: rem(20);
+  font-weight: bold;
+  color: $text;
+}
+
+.sum {
+  position: absolute;
+  top: rem(10);
+  right: rem(-10);
+  background: $success;
+  color: $white;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 100, 0.2);
+  padding: 0 rem(13);
+  font-weight: bold;
+  font-size: rem(18);
+
+  @media (max-width: $md-max-width) {
+    right: auto;
+    left: rem(10);
+  }
+}
+
+.footer {
+  text-align: center;
+  border-top: 1px solid $gray-border;
+  color: $text;
+  padding-top: rem(10);
+  margin-bottom: rem(-15);
+  font-style: italic;
+  font-size: rem(13);
+}

@@ -1,0 +1,19 @@
+@import 'assets/styles/mixins.scss';
+
+.thumbnail {
+  display: inline-block;
+  width: 4.28rem;
+  height: 4.28rem;
+  border: 1px solid #e4e9f0;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: #fff;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+  }
+}

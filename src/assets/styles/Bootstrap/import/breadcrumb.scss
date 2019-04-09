@@ -1,0 +1,93 @@
+@import 'assets/styles/mixins.scss';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/* BREADCRUMB */
+
+.breadcrumb {
+  background: $gray-lighten-more;
+
+  &--custom {
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 0;
+    background: none;
+    li {
+      padding: 0;
+      &:before {
+        display: none !important;
+      }
+      > a,
+      > span {
+        display: inline-block;
+        padding: 9px 30px;
+        position: relative;
+        background: $gray-lighten;
+        margin: 0 rem(8) rem(6);
+        font-size: 13px;
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: -10px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 39px 10px 0 0;
+          border-color: transparent $gray-lighten transparent transparent;
+
+          @include transition-slow();
+        }
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          right: -10px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 0 39px 10px;
+          border-color: transparent transparent transparent $gray-lighten;
+
+          @include transition-slow();
+        }
+      }
+      > a {
+        @include transition-slow();
+        &:hover,
+        &.active {
+          background: $blue;
+          color: $white;
+          &:before {
+            border-color: transparent $blue transparent transparent;
+          }
+          &:after {
+            border-color: transparent transparent transparent $blue;
+          }
+        }
+      }
+      &:first-child {
+        > a,
+        > span {
+          margin-left: 0;
+          &:before {
+            display: none;
+          }
+        }
+      }
+      &:last-child {
+        > a,
+        > span {
+          &:after {
+            display: none;
+          }
+        }
+      }
+      &:after {
+        padding: 0;
+        content: '';
+      }
+    }
+  }
+}

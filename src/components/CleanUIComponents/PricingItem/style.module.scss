@@ -1,0 +1,141 @@
+@import 'assets/styles/mixins.scss';
+
+.table {
+  width: 100%;
+  display: flex;
+  padding: rem(40) 0;
+
+  @media (max-width: $xl-max-width) {
+    display: block;
+    padding: 0;
+    .item {
+      margin-bottom: rem(20) !important;
+      border: 1px solid $gray-border;
+      border-radius: 6px !important;
+    }
+
+    .itemFeatured {
+      margin-top: 0;
+    }
+  }
+}
+
+.item {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  text-align: center;
+  border: 1px solid $gray-border;
+  border-left: none;
+  padding: rem(20);
+  background: $white;
+  &:first-child {
+    border-left: 1px solid $gray-border;
+    border-radius: 6px 0 0 6px;
+  }
+  &:last-child {
+    border-radius: 0 6px 6px 0;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.extended {
+  margin: rem(-40) 0 rem(-40) rem(-1);
+  padding: rem(60) rem(20);
+  border-radius: 6px;
+  border-left: 1px solid $gray-border !important;
+  overflow: hidden;
+
+  @media (max-width: $xl-max-width) {
+    margin: 0;
+  }
+}
+
+.default {
+  background: $default;
+  border-color: $default;
+  color: $white;
+}
+
+.primary {
+  background: $primary;
+  border-color: $primary;
+  color: $white;
+}
+
+.secondary {
+  background: $secondary;
+  border-color: $secondary;
+  color: $white;
+}
+
+.success {
+  background: $success;
+  border-color: $success;
+  color: $white;
+}
+
+.warning {
+  background: $warning;
+  border-color: $warning;
+  color: $white;
+}
+
+.danger {
+  background: $danger;
+  border-color: $danger;
+  color: $white;
+}
+
+.info {
+  background: $info;
+  border-color: $info;
+  color: $white;
+}
+
+.header {
+  padding: rem(30) 0;
+}
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: rem(3);
+  font-size: rem(24);
+  font-weight: 600;
+  margin-top: rem(10);
+}
+
+.price {
+  font-size: rem(48);
+}
+
+.currency {
+  display: inline-block;
+  margin-top: rem(10);
+  margin-right: rem(-10);
+  font-size: rem(20);
+  vertical-align: top;
+}
+
+.amount {
+  font-weight: 600;
+  font-size: rem(56);
+}
+
+.period {
+  font-size: rem(16);
+}
+
+.features {
+  li {
+    margin-bottom: rem(10);
+  }
+}
+
+.footer {
+  padding: rem(30) 0 rem(40);
+}

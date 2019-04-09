@@ -1,0 +1,93 @@
+@import 'assets/styles/mixins.scss';
+
+.header {
+  background-size: cover;
+}
+
+.socialInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.socialCounts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  color: $text-darken-more;
+}
+
+.actions {
+  :global(.ant-btn) {
+    margin-top: -1px;
+    position: relative;
+    z-index: 1;
+    border-radius: 0;
+
+    &:first-child {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    &:hover {
+      z-index: 2;
+    }
+  }
+}
+
+.contentWrapper {
+  margin-top: -180px;
+}
+
+.card {
+  border: none;
+  background: $gray-darken;
+  margin-top: rem(-120);
+  background-size: cover;
+  padding: rem(35) rem(35) rem(25) rem(35);
+
+  @media (max-width: $xl-max-width) {
+    margin-top: 0;
+  }
+}
+
+.wallItem {
+  margin-top: rem(20);
+  margin-bottom: rem(20);
+  padding-bottom: rem(20);
+  border-bottom: 1px solid $gray-border;
+}
+
+.wallAvatar {
+  float: left;
+}
+
+.wallContent {
+  margin-left: rem(70);
+}
+
+.wallInnerContent {
+  border: none;
+}
+
+.wallComments {
+  margin-top: rem(20);
+}
+
+.messageImg {
+  border-radius: 3px;
+  margin: 0 rem(5) rem(10) 0;
+  max-width: rem(200);
+}
+
+:global(.wallImg) {
+  border-radius: 3px;
+  max-width: rem(200);
+  margin: rem(0) rem(5) rem(10) rem(0);
+}

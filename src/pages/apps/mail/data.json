@@ -1,0 +1,169 @@
+{
+  "mailData": {
+    "mailCategories": [{
+      "key": "inbox",
+      "title": "Inbox",
+      "mailCount": 23
+    }, {
+      "key": "sent",
+      "title": "Sent Mail",
+      "mailCount": 19
+    }, {
+      "key": "drafts",
+      "title": "Drafts",
+      "mailCount": 0
+    }, {
+      "key": "spam",
+      "title": "Spam",
+      "mailCount": 12
+    }, {
+      "key": "deleted",
+      "title": "Deleted Messages",
+      "mailCount": 2
+    }],
+    "inbox": [{
+      "key": "1",
+      "favorites": true,
+      "from": "Go Daddy",
+      "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "attachments": true,
+      "time": "4:41PM"
+    }, {
+      "key": "2",
+      "favorites": true,
+      "from": "Hetzner",
+      "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "attachments": false,
+      "time": "4:41PM"
+    }, {
+      "key": "3",
+      "favorites": false,
+      "from": "mail@google.com",
+      "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "attachments": true,
+      "time": "4:41PM"
+    }, {
+      "key": "4",
+      "favorites": true,
+      "from": "Google.com",
+      "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "attachments": false,
+      "time": "4:41PM"
+    }, {
+      "key": "5",
+      "favorites": false,
+      "from": "Go Daddy",
+      "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "attachments": true,
+      "time": "4:41PM"
+    }],
+    "sent": [{
+      "key": "1",
+      "favorites": true,
+      "from": "Go Daddy",
+      "message": "Awesome mail!",
+      "attachments": true,
+      "time": "4:41PM"
+    }, {
+      "key": "2",
+      "favorites": true,
+      "from": "Hetzner",
+      "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "attachments": false,
+      "time": "4:41PM"
+    }, {
+      "key": "3",
+      "favorites": false,
+      "from": "mail@google.com",
+      "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "attachments": true,
+      "time": "4:41PM"
+    }, {
+      "key": "4",
+      "favorites": true,
+      "from": "Google.com",
+      "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "attachments": false,
+      "time": "4:41PM"
+    }, {
+      "key": "5",
+      "favorites": false,
+      "from": "Go Daddy",
+      "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "attachments": true,
+      "time": "4:41PM"
+    }],
+    "spam": [{
+      "key": "1",
+      "favorites": true,
+      "from": "Go Daddy",
+      "message": "Awesome mail!",
+      "attachments": true,
+      "time": "4:41PM"
+    }, {
+      "key": "2",
+      "favorites": true,
+      "from": "Hetzner",
+      "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "attachments": false,
+      "time": "4:41PM"
+    }, {
+      "key": "3",
+      "favorites": false,
+      "from": "mail@google.com",
+      "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "attachments": true,
+      "time": "4:41PM"
+    }, {
+      "key": "4",
+      "favorites": true,
+      "from": "Google.com",
+      "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "attachments": false,
+      "time": "4:41PM"
+    }, {
+      "key": "5",
+      "favorites": false,
+      "from": "Go Daddy",
+      "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "attachments": true,
+      "time": "4:41PM"
+    }],
+    "deleted": [{
+      "key": "1",
+      "favorites": true,
+      "from": "Go Daddy",
+      "message": "Awesome mail!",
+      "attachments": true,
+      "time": "4:41PM"
+    }, {
+      "key": "2",
+      "favorites": true,
+      "from": "Hetzner",
+      "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "attachments": false,
+      "time": "4:41PM"
+    }, {
+      "key": "3",
+      "favorites": false,
+      "from": "mail@google.com",
+      "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "attachments": true,
+      "time": "4:41PM"
+    }, {
+      "key": "4",
+      "favorites": true,
+      "from": "Google.com",
+      "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "attachments": false,
+      "time": "4:41PM"
+    }, {
+      "key": "5",
+      "favorites": false,
+      "from": "Go Mother",
+      "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "attachments": true,
+      "time": "4:41PM"
+    }]
+  }
+}

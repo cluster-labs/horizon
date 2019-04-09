@@ -1,0 +1,54 @@
+@import 'assets/styles/mixins.scss';
+
+.paymentTransaction {
+  padding: rem(15) rem(25);
+  position: relative;
+  border-left: 4px solid $danger !important;
+}
+
+.income {
+  border-left: 4px solid $success !important;
+
+  .icon {
+    i {
+      color: $success;
+    }
+  }
+}
+
+.icon {
+  position: absolute;
+  top: rem(14);
+  right: rem(20);
+  i {
+    font-size: rem(24);
+    color: $danger;
+  }
+}
+
+.amount {
+  font-size: rem(18);
+  color: $black;
+  font-weight: bold;
+}
+
+.info {
+  font-size: rem(13);
+  color: $text;
+  margin-left: rem(5);
+
+  @media (max-width: $md-max-width) {
+    right: auto;
+    left: rem(10);
+  }
+}
+
+.footer {
+  color: $text;
+  padding: rem(10) rem(25);
+  margin: rem(10) rem(-25) rem(-15);
+  font-style: italic;
+  font-size: rem(13);
+  background: $gray-lighten-more-more;
+  border-radius: 0 0 7px 7px;
+}

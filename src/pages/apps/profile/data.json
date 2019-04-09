@@ -1,0 +1,53 @@
+{
+  "name": "Artour Scott",
+  "nickname": "@arteezy",
+  "photo": "resources/images/avatars/1.jpg",
+  "background": "resources/images/photos/4.jpeg",
+  "post": "Founder / CEO",
+  "postsCount": "17",
+  "followersCount": "154",
+  "lastActivity": "13 May 2016 7:26PM",
+  "status": "Offline",
+  "skills": [{
+    "name": "Managment",
+    "value": 73
+  }, {
+    "name": "Investing",
+    "value": 85
+  }, {
+    "name": "Programming",
+    "value": 78
+  }, {
+    "name": "Leading",
+    "value": 95
+  }, {
+    "name": "Learning",
+    "value": 54
+  }],
+  "coursesEnd": "Digital Ocean, Nokia",
+  "adress": "New York, US",
+  "profSkills": ["HTML", "CSS", "JavaScript"],
+  "lastCompanies": "Microsoft, Soft Mailstorm",
+  "personal": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+  "posts": [{
+    "avatar": "resources/images/avatars/4.jpg",
+    "name": "John Blake",
+    "date": "10 May 2016 11:03AM",
+    "content": "<div><img class=\"wallImg\" src=\"resources/images/photos/4.jpeg\" /><img class=\"wallImg\" src=\"resources/images/photos/3.jpeg\" /><img class=\"wallImg\" src=\"resources/images/photos/2.jpeg\" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />Ipsum is simply dummy lorem</p></div>",
+    "likesCount": 21,
+    "commentsCount": 2,
+    "comments": [{
+      "avatar": "resources/images/avatars/1.jpg",
+      "name": "Donald Trump",
+      "date": "11 May 2016 18:13AM",
+      "content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Ipsum is simply dummy lorem</p>",
+      "likesCount": 26
+    }, {
+      "avatar": "resources/images/avatars/4.jpg",
+      "name": "Blackford May",
+      "date": "11 May 2016 19:21AM",
+      "content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Ipsum is simply dummy lorem</p>",
+      "likesCount": 26
+    }]
+  }]
+}

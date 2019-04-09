@@ -1,0 +1,66 @@
+@import 'assets/styles/mixins.scss';
+
+.card {
+  :global(.slick-list) {
+    border-radius: 3px;
+  }
+}
+
+.inverse {
+  .item {
+    background-color: $white;
+  }
+
+  .body {
+    color: $text;
+
+    h2 {
+      color: $text;
+    }
+
+    &:hover {
+      color: $text;
+    }
+  }
+
+  :global(.slick-dots li button) {
+    background: $default;
+  }
+
+  :global(.slick-dots li.slick-active button) {
+    background: $default;
+  }
+}
+
+.item {
+  background-color: $default;
+  display: block !important;
+}
+
+.body {
+  display: block;
+  height: rem(140);
+  position: relative;
+  width: 100%;
+  padding: rem(25) rem(30);
+  overflow: hidden;
+  color: $white;
+
+  h2 {
+    color: white;
+  }
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.icon {
+  display: inline-block;
+  font-size: rem(80);
+  position: absolute;
+  z-index: 1;
+  bottom: rem(-40);
+  right: rem(-25);
+  opacity: 0.4;
+}

@@ -1,0 +1,60 @@
+@import 'assets/styles/mixins.scss';
+
+.chat {
+  overflow-x: hidden;
+}
+
+.messaging {
+  overflow: auto;
+}
+
+.message {
+  padding: rem(10) 0;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.messageContent {
+  padding: rem(10) rem(15) rem(1);
+  background: $gray-lighten-more;
+  border-radius: 5px;
+  position: relative;
+  flex-grow: 1;
+
+  &:after {
+    position: absolute;
+    top: rem(22);
+    width: 0;
+    height: 0;
+    display: block;
+    content: '';
+    border: rem(7) solid transparent;
+    border-right-color: $gray-lighten-more;
+  }
+}
+
+.me {
+  flex-direction: row-reverse;
+
+  .messageContent {
+    margin-right: rem(20);
+
+    &::after {
+      left: 100%;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.companion {
+  flex-direction: row;
+
+  .messageContent {
+    margin-left: rem(20);
+
+    &::after {
+      right: 100%;
+    }
+  }
+}

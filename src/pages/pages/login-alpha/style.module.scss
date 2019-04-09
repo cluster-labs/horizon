@@ -1,0 +1,187 @@
+@import 'assets/styles/mixins.scss';
+
+.login {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: rem(40);
+  overflow-y: auto;
+  flex: 0;
+  background-color: #fff;
+  transition: background-image 1s linear;
+
+  &.fullscreen {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  &.windowed {
+    min-height: 1200px;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: rem(50);
+
+  @media screen and (max-width: $sm-max-width) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+  }
+}
+
+.logo {
+  max-width: rem(150);
+  max-height: rem(50);
+  flex-shrink: 0;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.loginNav {
+  padding-top: rem(10);
+  padding-bottom: rem(10);
+}
+
+.navItems {
+  list-style: none;
+  font-size: rem(16);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+
+  @media screen and (max-width: $sm-max-width) {
+    margin-top: rem(10);
+  }
+
+  li {
+    text-transform: uppercase;
+    margin-left: rem(10);
+    margin-right: rem(10);
+    margin-top: rem(5);
+    margin-bottom: rem(5);
+    flex-grow: 1;
+    text-align: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      color: $white;
+      font-weight: 700;
+
+      &:hover,
+      &:focus {
+        border-bottom: 1px solid rgba($white, 0.4);
+      }
+
+      &.active {
+        border-bottom: 1px solid $white;
+      }
+    }
+  }
+}
+
+.styleControls {
+  margin-right: auto;
+  margin-left: rem(20);
+
+  @media screen and (max-width: $xxl-max-width) {
+    order: 1;
+    width: 100%;
+    margin-left: 0;
+    margin-top: rem(10);
+  }
+
+  @media screen and (max-width: $sm-max-width) {
+    text-align: center;
+  }
+}
+
+.content {
+  margin: auto;
+}
+
+.promo {
+  color: $white;
+  text-align: center;
+  max-width: rem(800);
+  margin-bottom: rem(60);
+
+  h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: rem(16);
+  }
+}
+
+.form {
+  max-width: rem(500);
+  padding: rem(50) rem(40) rem(20);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: $white;
+  position: relative;
+  margin: 0 auto;
+}
+
+.formTitle {
+  font-weight: 700;
+  font-size: rem(20);
+  color: $text-darken-more;
+  margin-bottom: rem(30);
+  text-transform: uppercase;
+}
+
+.footer {
+  padding-top: rem(40);
+}
+
+.footerNav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  li {
+    margin-top: rem(5);
+    margin-bottom: rem(5);
+    margin-left: rem(10);
+    margin-right: rem(10);
+    text-align: center;
+
+    a {
+      color: $white;
+      text-transform: uppercase;
+
+      &:hover,
+      &:focus,
+      &:active {
+        border-bottom: 1px solid $white;
+      }
+    }
+  }
+}

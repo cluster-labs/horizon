@@ -1,0 +1,99 @@
+@import 'assets/styles/mixins.scss';
+
+.dropdown {
+  padding-right: 15px;
+  position: relative;
+  cursor: pointer;
+  @include transition-slow;
+
+  &::after {
+    color: $gray;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -2px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: '';
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+    @include transition-slow;
+  }
+
+  &:hover {
+    color: $blue;
+
+    &::after {
+      color: $gray-darken;
+    }
+  }
+}
+.activity {
+  width: rem(290);
+  margin: 0;
+  background: $white;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.item {
+  border-bottom: 1px solid $gray-border;
+  padding: rem(10) 0 !important;
+  position: relative;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  &:hover {
+    background: $gray-lighten;
+
+    .icon {
+      background: $text-lighten;
+      color: $white;
+      border-color: $text-lighten;
+    }
+  }
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding-top: rem(12);
+  font-size: rem(16);
+  width: rem(40);
+  text-align: center;
+  color: $gray;
+  background: $gray-lighten-more;
+  border-bottom: 1px solid $gray-lighten;
+}
+
+.inner {
+  margin-left: rem(50);
+  padding-right: rem(15);
+
+  label {
+    font-size: rem(12);
+  }
+}
+
+.descr {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.title {
+  > span {
+    font-size: rem(13);
+    color: $gray;
+  }
+}

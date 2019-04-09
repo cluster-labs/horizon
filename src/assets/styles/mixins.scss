@@ -1,0 +1,77 @@
+// Colors
+$white: #fff;
+
+$text: #74708d;
+$text-lighten: #c0bdd0;
+$text-darken: #615d7c;
+$text-darken-more: #514d6a;
+
+$gray: #d2d9e5;
+$gray-lighten: #eef0f4;
+$gray-lighten-more: #f2f4f8;
+$gray-lighten-more-more: #f9fafc;
+$gray-darken: #b8beca;
+$gray-border: #e4e9f0;
+
+$black: #0e0b20;
+$black-lighten: #222034;
+$black-lighten-more: #393749;
+
+$blue: #08f;
+$blue-darken: #0072d6;
+$orange: #f2a654;
+$yellow: yellow;
+
+$menuBg: #001529;
+$menuBg-darken: #000c17;
+
+// Accent colors
+$default: #acb7bf;
+$primary: #0190fe;
+$secondary: #6a7a84;
+$success: #46be8a;
+$info: #0887c9;
+$warning: #f39834;
+$danger: #fb434a;
+
+// Font Family
+$base__font-family: 'Nunito Sans', sans-serif !important;
+
+// Font Size
+$base__font-size: 13 !default;
+
+// Convert value rem() sass mixin
+@function rem($px, $base: $base__font-size) {
+  @return #{floor(($px/$base) * 100) / 100}rem; // to REMs
+  // comment code above and uncomment below for change REMs to PXs
+  //@return #{$px}px;
+}
+
+// Transitions
+@mixin transition-fast() {
+  transition: all 0.05s ease-in-out;
+}
+@mixin transition-middle() {
+  transition: all 0.1s ease-in-out;
+}
+@mixin transition-slow() {
+  transition: all 0.2s ease-in-out;
+}
+@mixin transition-very-slow() {
+  transition: all 0.4s ease-in-out;
+}
+@mixin transition-color() {
+  transition: color 0.2s ease-in-out;
+}
+
+// Responsive utils
+$xxl-min-width: 1600px;
+$xxl-max-width: 1599px;
+$xl-min-width: 1200px;
+$xl-max-width: 1199px;
+$md-min-width: 992px;
+$md-max-width: 991px;
+$sm-min-width: 768px;
+$sm-max-width: 767px;
+$xs-min-width: 576px;
+$xs-max-width: 575px;

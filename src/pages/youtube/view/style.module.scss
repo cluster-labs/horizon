@@ -1,0 +1,166 @@
+@import 'assets/styles/mixins.scss';
+
+.videoPage {
+  max-width: rem(1000);
+  margin: 0 auto;
+}
+
+.card {
+  padding: rem(16);
+}
+
+.player {
+  img {
+    width: 100%;
+  }
+}
+
+.mainContent {
+  float: left;
+  width: calc(100% - 365px);
+
+  @media (max-width: $xl-max-width) {
+    width: 100%;
+  }
+}
+
+.descr {
+  margin-top: rem(20);
+}
+
+.addComment {
+  margin-bottom: rem(10);
+  padding-bottom: rem(20);
+  border-bottom: 1px solid $gray-border;
+}
+
+.commentItem {
+  padding-top: rem(10);
+  padding-bottom: rem(10);
+}
+
+.commentAvatar {
+  float: left;
+}
+
+.commentContent {
+  padding-top: rem(6);
+  padding-bottom: rem(6);
+  padding-left: rem(15);
+  padding-right: rem(16);
+  margin-left: rem(70);
+  border-radius: 5px;
+  background-color: $gray-lighten-more;
+  position: relative;
+  &::after {
+    position: absolute;
+    top: 1.57rem;
+    left: -1rem;
+    width: 0;
+    height: 0;
+    display: block;
+    content: '';
+    border: 0.5rem solid transparent;
+    border-right-color: #f2f4f8;
+  }
+}
+
+.commentUser {
+  float: left;
+  padding-top: rem(18);
+}
+
+.commentForm {
+  margin-top: rem(8);
+  margin-left: rem(70);
+}
+
+.commentTime {
+  font-size: 80%;
+  font-weight: normal;
+}
+
+.commentLike {
+  padding-top: rem(3);
+}
+
+.sidebar {
+  float: right;
+  width: 350px;
+
+  @media (max-width: $xl-max-width) {
+    display: none;
+  }
+}
+
+.sidebarHead {
+  padding-bottom: rem(7);
+}
+
+.sidebarTitle {
+  display: inline-block;
+}
+
+.watchNext {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nextItemLink {
+  display: block;
+
+  &:hover {
+    .itemName {
+      color: $blue;
+    }
+
+    .itemAuthor {
+      color: $text;
+    }
+  }
+}
+
+.nextItem {
+  display: block;
+  padding-top: rem(15);
+  border-top: 1px solid $gray-border;
+}
+
+.itemThumb {
+  float: left;
+  margin-bottom: rem(15);
+}
+
+.itemThumbImg {
+  width: 168px;
+  height: 94px;
+}
+
+.itemDescr {
+  cursor: pointer;
+  display: block;
+  margin-left: 180px;
+}
+
+.itemName {
+  font-weight: bolder;
+  display: block;
+  color: $black;
+  @include transition-slow();
+}
+
+.itemAuthor {
+  display: block;
+  color: $text;
+  font-size: rem(12);
+}
+
+.itemViews {
+  display: block;
+  font-size: rem(12);
+}
+
+.itemStatus {
+  display: block;
+}

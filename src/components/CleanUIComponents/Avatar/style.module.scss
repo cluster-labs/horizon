@@ -1,0 +1,51 @@
+@import 'assets/styles/mixins.scss';
+
+.avatar {
+  width: rem(35);
+  height: rem(35);
+  background-color: $gray-lighten;
+  border-color: $gray-darken;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.size20 {
+  width: rem(20);
+  height: rem(20);
+}
+
+.size25 {
+  width: rem(25);
+  height: rem(25);
+}
+
+.size50 {
+  width: rem(50);
+  height: rem(50);
+}
+
+.size70 {
+  width: rem(70);
+  height: rem(70);
+}
+
+.size90 {
+  width: rem(90);
+  height: rem(90);
+}
+
+.size110 {
+  width: rem(110);
+  height: rem(110);
+}
+
+.border {
+  border: 4px solid $gray;
+}

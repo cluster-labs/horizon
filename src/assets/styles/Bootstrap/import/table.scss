@@ -1,0 +1,93 @@
+@import 'assets/styles/mixins.scss';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/* TABLE */
+
+.table {
+  width: 100% !important;
+
+  thead {
+    th {
+      border-bottom: 1px solid $gray-border;
+      outline: none !important;
+      &:focus {
+        background: $gray-border;
+      }
+    }
+  }
+  td,
+  th {
+    border-color: $gray-border;
+    &:focus {
+      background-color: $gray-border;
+    }
+  }
+  tbody {
+    tr:first-child {
+      td {
+        border-top: none;
+      }
+    }
+  }
+  &.table-hover {
+    tbody {
+      tr {
+        &:hover {
+          background: $gray-lighten-more;
+        }
+      }
+    }
+  }
+  tr.active,
+  th.active {
+    background: $gray-lighten-more;
+  }
+  .thead-inverse {
+    th {
+      background: $black-lighten;
+    }
+  }
+  .thead-default {
+    th {
+      background: $gray-lighten-more;
+    }
+  }
+
+  &.table-striped {
+    tbody tr:nth-of-type(odd) {
+      background: $gray-lighten-more;
+    }
+  }
+
+  &.table-vertical-middle {
+    td,
+    th {
+      vertical-align: middle;
+    }
+  }
+}
+
+.table-inverse {
+  color: $gray-darken;
+
+  thead th {
+    border-bottom-color: $black-lighten-more;
+    color: $white;
+  }
+  th,
+  td {
+    border-top-color: $black-lighten-more;
+  }
+  th,
+  td,
+  thead th {
+    background: $black-lighten;
+    &:focus {
+      background: $black-lighten;
+    }
+  }
+  tr.active,
+  th.active {
+    background: $gray-lighten;
+  }
+}

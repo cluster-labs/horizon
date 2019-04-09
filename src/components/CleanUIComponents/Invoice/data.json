@@ -1,0 +1,48 @@
+{
+  "invoiceData": {
+    "senderName": "Amazon Delivery",
+    "senderLogo": "resources/images/amazon.jpg",
+    "senderAdress": "795 Folsom Ave, Suite 600, San Francisco, CA, 94107 ",
+    "senderEmail": "example@amazon.com",
+    "senderPhone": "(123) 456-7890",
+    "senderFax": "800-692-7753",
+    "recipientName": "Artour Arteezy",
+    "recipientAdress": "795 Folsom Ave, Suite 600, San Francisco, CA, 94107",
+    "recipientPhone": "(123) 456-7890",
+    "invoiceNumber": "W32567-2352-4756",
+    "invoiceDueDate": "January 22, 2016",
+    "invoiceDate": "January 20, 2016",
+    "invoiceContent": [{
+      "key": "1",
+      "number": "1",
+      "description": "Server hardware purchase",
+      "quantity": "35",
+      "unitcost": "$75.00",
+      "total": "$2,152.00"
+    }, {
+      "key": "2",
+      "number": "2",
+      "description": "Office furniture purchase",
+      "quantity": "21",
+      "unitcost": "$169.00",
+      "total": "$4,169.00"
+    }, {
+      "key": "3",
+      "number": "3",
+      "description": "Company Anual Dinner Catering",
+      "quantity": "58",
+      "unitcost": "$49.00",
+      "total": "$1,260.00"
+    }, {
+      "key": "4",
+      "number": "4",
+      "description": "Payment for Jan 2016",
+      "quantity": "231",
+      "unitcost": "$12.00",
+      "total": "$866.00"
+    }],
+    "invoiceAmount": "$5,700.00",
+    "invoiceVAT": "$57.00",
+    "invoiceTotal": "$5,757.00"
+  }
+}

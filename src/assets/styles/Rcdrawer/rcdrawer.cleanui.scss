@@ -1,0 +1,39 @@
+@import 'assets/styles/mixins.scss';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  RCDRAWER */
+
+.drawer-handle {
+  background: $menuBg !important;
+  top: 104px;
+}
+
+.drawer.drawer-open .drawer-handle-icon {
+  background: transparent !important;
+}
+
+.drawer-handle-icon {
+  background: $white !important;
+  &:after,
+  &:before {
+    background: $white !important;
+  }
+}
+
+.drawer {
+  .drawer-content {
+    overflow: visible;
+    background: $menuBg;
+    transition: background 0.3s;
+  }
+
+  &.drawer-light {
+    .drawer-content {
+      background: $white;
+    }
+  }
+}
+
+.drawer-content-wrapper {
+  box-shadow: none !important;
+}

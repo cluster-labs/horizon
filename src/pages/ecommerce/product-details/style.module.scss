@@ -1,0 +1,277 @@
+@import 'assets/styles/mixins.scss';
+
+.item {
+  padding: rem(20);
+  border-radius: 5px;
+  border: 1px solid $gray-border;
+  margin-bottom: rem(35);
+  position: relative;
+  background: $white;
+  :global(.slick-slide) {
+    height: auto !important;
+    background: none !important;
+  }
+}
+
+.status {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: rem(25);
+  border-style: solid;
+  width: 0;
+  height: 0;
+  border-color: $danger transparent transparent $danger;
+  z-index: 10;
+}
+
+.statusTitle {
+  position: relative;
+  top: rem(-19);
+  left: rem(-18);
+  display: inline-block;
+  transform: rotate(-45deg);
+  color: $white !important;
+  text-transform: uppercase;
+  font-size: rem(10);
+  font-weight: bold;
+}
+
+.img {
+  position: relative;
+  text-align: center;
+  height: rem(250);
+  overflow: hidden;
+  margin: 0 auto;
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.imgItem {
+  display: inline-block !important;
+  min-height: rem(250);
+  max-height: rem(250);
+  max-width: 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.like {
+  position: absolute;
+  z-index: 100;
+  top: rem(10);
+  right: rem(10);
+  font-size: rem(24);
+  cursor: pointer;
+  color: $black-lighten-more;
+  i {
+    transition: all 0.2s ease-in-out;
+    opacity: 0.2;
+    color: $text;
+  }
+  &:hover {
+    i {
+      opacity: 0.4;
+    }
+  }
+}
+
+.selectedLike {
+  i {
+    opacity: 1 !important;
+  }
+}
+
+.sizes {
+  font-style: normal;
+  margin: rem(15) 0 rem(10);
+
+  span {
+    display: inline-block;
+    margin-right: rem(5);
+    border: 1px solid $gray;
+    line-height: rem(14);
+    border-radius: rem(20);
+    padding: rem(3);
+    min-width: rem(30);
+    text-align: center;
+    margin-bottom: rem(5);
+  }
+}
+
+.descr {
+  margin-top: rem(10);
+}
+
+.option {
+  margin-bottom: rem(20);
+
+  &:last-child {
+    margin-bottom: rem(5);
+  }
+
+  .sizes {
+    margin: 0;
+  }
+}
+
+.optionTitle {
+  color: $text;
+  margin-bottom: rem(10);
+}
+
+.price {
+  font-size: rem(31);
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.priceBefore {
+  display: inline-block;
+  margin-left: rem(10);
+  font-size: rem(18);
+  text-decoration: line-through;
+  color: $text;
+  position: relative;
+  top: rem(-3);
+  font-weight: normal;
+}
+
+.sku {
+  float: right;
+  color: $text;
+  text-align: right;
+  margin-top: rem(3);
+}
+
+.rating {
+  margin-top: rem(5);
+  color: $orange;
+  font-size: rem(18);
+}
+
+.controls {
+  .btn {
+    padding: rem(15) rem(40) !important;
+  }
+  .btn-link {
+    margin-top: rem(3);
+    padding: rem(15) rem(15) !important;
+  }
+}
+
+.photos {
+  margin-left: rem(-20);
+  margin-top: rem(-15);
+}
+
+.photosItem {
+  margin-left: rem(20);
+  width: calc(25% - 1.42rem);
+  text-align: center;
+  float: left;
+  border: 1px solid $gray-border;
+  border-radius: rem(5px);
+  overflow: hidden;
+  margin-bottom: rem(20);
+  background: $white;
+  cursor: pointer;
+  img {
+    width: rem(70);
+    max-width: 100%;
+  }
+}
+
+.photosItemActive {
+  border-color: $primary;
+}
+
+.mainTitle {
+  margin-top: rem(20);
+  color: $text-darken-more;
+}
+
+.info {
+  margin-top: rem(40);
+}
+
+.breadcrumbs {
+  display: inline-block;
+  padding: 0;
+  margin-bottom: 0;
+  background: none;
+  border-radius: 0.25rem;
+
+  :global(.ant-breadcrumb) {
+    & > span {
+      &:first-child {
+        a {
+          &:before {
+            display: none;
+          }
+        }
+      }
+      &:last-child {
+        a {
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+    a {
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: -10px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 39px 10px;
+        border-color: transparent transparent transparent #eef0f4;
+        transition: all 0.3s;
+      }
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -10px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 39px 10px 0 0;
+        border-color: transparent #eef0f4 transparent transparent;
+        transition: all 0.3s;
+      }
+    }
+  }
+}
+
+.breadcrumbItem {
+  display: inline-block;
+  padding: 9px 30px;
+  position: relative;
+  background: #eef0f4;
+  font-size: 14px;
+  transition: background 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background: #08f;
+    a {
+      color: #fff;
+      &:after {
+        border-color: transparent transparent transparent #08f;
+      }
+      &:before {
+        border-color: transparent #08f transparent transparent;
+      }
+    }
+  }
+}

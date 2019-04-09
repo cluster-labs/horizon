@@ -1,0 +1,282 @@
+{
+  "ordersGraph": {
+    "labels": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    "series": [[2, 4, 7, 5, 25, 5, 28, 31]]
+  },
+  "amountInfo": {
+    "revenue": "$23,636.00",
+    "tax": "$526.00",
+    "shipping": "$600.00",
+    "quantity": "1251"
+  },
+  "ordersInfo": {
+    "revenue": "$35,762.00",
+    "tax": "$262.00",
+    "shipping": "$752.00",
+    "quantity": "75736"
+  },
+  "amountGraph": {
+    "labels": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    "series": [[4, 10, 67, 25, 38, 30, 18]]
+  },
+  "bestsellersData": [{
+    "key": "1",
+    "id": "000012",
+    "product": "Apple iPhone 6S",
+    "price": 799.00,
+    "orderquantity": 85
+  }, {
+    "key": "2",
+    "id": "000012",
+    "product": "Apple iPhone 6S",
+    "price": 799.00,
+    "orderquantity": 77
+  }, {
+    "key": "3",
+    "id": "000013",
+    "product": "Samsung Galaxy S7",
+    "price": 53.00,
+    "orderquantity": 85
+  }, {
+    "key": "4",
+    "id": "000013",
+    "product": "Samsung Galaxy S7",
+    "price": 53.60,
+    "orderquantity": 34
+  }, {
+    "key": "5",
+    "id": "000013",
+    "product": "Samsung Galaxy S7 Edge",
+    "price": 549.00,
+    "orderquantity": 33
+  }, {
+    "key": "6",
+    "id": "000013",
+    "product": "Samsung Galaxy S7 Edge",
+    "price": 456.00,
+    "orderquantity": 82
+  }, {
+    "key": "7",
+    "id": "000013",
+    "product": "Samsung Galaxy S7 Edge",
+    "price": 456.00,
+    "orderquantity": 82
+  }, {
+    "key": "8",
+    "id": "000014",
+    "product": "Meizu MX6",
+    "price": 871.14,
+    "orderquantity": 68
+  }, {
+    "key": "9",
+    "id": "000014",
+    "product": "Meizu MX6",
+    "price": 871.14,
+    "orderquantity": 68
+  }, {
+    "key": "10",
+    "id": "000014",
+    "product": "Meizu MX6",
+    "price": 871.14,
+    "orderquantity": 68
+  }, {
+    "key": "11",
+    "id": "000014",
+    "product": "Meizu MX6",
+    "price": 871.14,
+    "orderquantity": 68
+  }, {
+    "key": "12",
+    "id": "000015",
+    "product": "Apple 5S",
+    "price": 399.00,
+    "orderquantity": 63
+  }, {
+    "key": "13",
+    "id": "000015",
+    "product": "Apple 5S",
+    "price": 399.00,
+    "orderquantity": 63
+  }],
+  "mostViewedData": [{
+    "key": "1",
+    "id": "000012",
+    "product": "Apple iPhone 6S",
+    "price": 799.00,
+    "views": 85
+  }, {
+    "key": "2",
+    "id": "000012",
+    "product": "Apple iPhone 6S",
+    "price": 799.00,
+    "views": 77
+  }, {
+    "key": "3",
+    "id": "000013",
+    "product": "Samsung Galaxy S7",
+    "price": 53.00,
+    "views": 85
+  }, {
+    "key": "4",
+    "id": "000013",
+    "product": "Samsung Galaxy S7",
+    "price": 53.60,
+    "views": 34
+  }, {
+    "key": "5",
+    "id": "000013",
+    "product": "Samsung Galaxy S7 Edge",
+    "price": 549.00,
+    "views": 33
+  }, {
+    "key": "6",
+    "id": "000013",
+    "product": "Samsung Galaxy S7 Edge",
+    "price": 456.00,
+    "views": 82
+  }, {
+    "key": "7",
+    "id": "000013",
+    "product": "Samsung Galaxy S7 Edge",
+    "price": 456.00,
+    "views": 82
+  }, {
+    "key": "8",
+    "id": "000014",
+    "product": "Meizu MX6",
+    "price": 871.14,
+    "views": 68
+  }],
+  "newCustomersData": [{
+    "key": "1",
+    "id": "00001",
+    "name": "Arnold Stritz",
+    "date": "2013/09/27",
+    "total": 53
+  }, {
+    "key": "2",
+    "id": "00002",
+    "name": "Art Lowe",
+    "date": "2013/09/26",
+    "total": 293
+  }, {
+    "key": "3",
+    "id": "00003",
+    "name": "Nick Cave",
+    "date": "2014/05/12",
+    "total": 342
+  }, {
+    "key": "4",
+    "id": "00004",
+    "name": "David Blake",
+    "date": "2012/01/26",
+    "total": 213
+  }, {
+    "key": "5",
+    "id": "00005",
+    "name": "Ben Loda",
+    "date": "2017/04/16",
+    "total": 24
+  }],
+  "topCustomersData": [{
+    "key": "1",
+    "id": "00001",
+    "name": "Arnold Stritz",
+    "date": "2013/09/27",
+    "total": 124423
+  }, {
+    "key": "2",
+    "id": "00002",
+    "name": "Art Lowe",
+    "date": "2013/09/26",
+    "total": 15316
+  }, {
+    "key": "3",
+    "id": "00003",
+    "name": "Nick Cave",
+    "date": "2014/05/12",
+    "total": 42562
+  }, {
+    "key": "4",
+    "id": "00004",
+    "name": "David Blake",
+    "date": "2012/01/26",
+    "total": 43523
+  }, {
+    "key": "5",
+    "id": "00005",
+    "name": "Ben Loda",
+    "date": "2017/04/16",
+    "total": 346452
+  }, {
+    "key": "6",
+    "id": "00004",
+    "name": "David Blake",
+    "date": "2012/01/26",
+    "total": 342563
+  }, {
+    "key": "7",
+    "id": "00002",
+    "name": "Art Lowe",
+    "date": "2013/09/26",
+    "total": 52823
+  }],
+  "lastOrdersData": [{
+    "key": "1",
+    "customer": "Veronica Costello",
+    "items": 1,
+    "total": 37.02
+  }, {
+    "key": "2",
+    "customer": "David Blake",
+    "items": 4,
+    "total": 81.57
+  }, {
+    "key": "3",
+    "customer": "Nick Cave",
+    "items": 3,
+    "total": 66.01
+  }, {
+    "key": "4",
+    "customer": "Veronica Costello",
+    "items": 1,
+    "total": 34.02
+  }, {
+    "key": "5",
+    "customer": "David Blake",
+    "items": 4,
+    "total": 81.57
+  }],
+  "lastSearchData": [{
+    "key": "1",
+    "searchTerm": "Puma",
+    "result": 15,
+    "uses": 353
+  }, {
+    "key": "2",
+    "searchTerm": "Nike",
+    "result": 23,
+    "uses": 153
+  }, {
+    "key": "3",
+    "searchTerm": "Adidas",
+    "result": 52,
+    "uses": 232
+  }],
+  "topSearchData": [{
+    "key": "1",
+    "searchTerm": "Meizu",
+    "result": 15,
+    "uses": 353
+  }, {
+    "key": "2",
+    "searchTerm": "Samsung",
+    "result": 23,
+    "uses": 153
+  }, {
+    "key": "3",
+    "searchTerm": "Apple",
+    "result": 52,
+    "uses": 232
+  }]
+}

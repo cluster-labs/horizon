@@ -1,0 +1,84 @@
+@import 'assets/styles/mixins.scss';
+
+.explore {
+  max-width: rem(1000);
+  margin: 0 auto;
+}
+
+.descr {
+  margin-bottom: rem(14);
+}
+
+.descrText {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 6px;
+}
+
+.overallData {
+  border: 1px solid $gray-border;
+  border-radius: 4px;
+  padding: rem(7);
+  margin-bottom: rem(12);
+}
+
+.overallDataList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  width: 100%;
+}
+
+.overallDataItem {
+  display: table-cell;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sortLeft {
+  float: left;
+  margin-bottom: rem(12);
+
+  @media (max-width: $md-max-width) {
+    float: none;
+  }
+
+  :global(.dropdown-toggle) {
+    padding-top: rem(2.6);
+    padding-bottom: rem(2.6);
+    border: 1px solid $gray;
+  }
+}
+
+.sortRight {
+  float: right;
+  margin-bottom: rem(12);
+
+  @media (max-width: $md-max-width) {
+    float: none;
+  }
+}
+
+.sortOption {
+  display: inline-block;
+  vertical-align: top;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav {
+  border-top: 1px solid rgba($black, 0.1);
+  border-bottom: 1px solid rgba($black, 0.1);
+}
+
+.navIcon {
+  width: 17px;
+  padding-right: 0 !important;
+}
+
+.navTime {
+  text-align: right;
+}

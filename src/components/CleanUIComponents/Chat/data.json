@@ -1,0 +1,31 @@
+{
+  "chats": [{
+    "username": "Chris Evans",
+    "content": "Hello World!",
+    "img": "resources/images/avatars/1.jpg"
+  }, {
+    "username": "Diana May",
+    "content": "Love it!",
+    "img": "resources/images/avatars/2.jpg"
+  }, {
+    "username": "Chris Evans",
+    "img": "resources/images/avatars/1.jpg",
+    "content": "Lorem ipsum dolor sit amet, nibh ipsum. Cum class sem inceptos incidunt sed sed. Tempus wisi enim id, arcu sed lectus aliquam, nulla vitae est bibendum molestie elit risus."
+  }, {
+    "username": "Chris Evans",
+    "content": "So",
+    "img": "resources/images/avatars/1.jpg"
+  }, {
+    "username": "Chris Evans",
+    "content": "Chilltime is going to be an app for you to view videos with friends",
+    "img": "resources/images/avatars/1.jpg"
+  }, {
+    "username": "Chris Evans",
+    "content": "You can sign-up now to try out our private beta!",
+    "img": "resources/images/avatars/1.jpg"
+  }, {
+    "username": "Diana May",
+    "content": "Definitely! Sounds great!",
+    "img": "resources/images/avatars/2.jpg"
+  }]
+}

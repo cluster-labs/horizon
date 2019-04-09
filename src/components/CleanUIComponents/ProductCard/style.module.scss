@@ -1,0 +1,141 @@
+@import 'assets/styles/mixins.scss';
+
+.productCard {
+  padding: rem(20);
+  border-radius: 5px;
+  border: 1px solid $gray-border;
+  margin-bottom: rem(35);
+  position: relative;
+  background: $white;
+}
+
+.status {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: rem(25);
+  border-style: solid;
+  width: 0;
+  height: 0;
+  border-color: $danger transparent transparent $danger;
+  z-index: 10;
+}
+
+.statusTitle {
+  position: relative;
+  top: rem(-19);
+  left: rem(-18);
+  display: inline-block;
+  transform: rotate(-45deg);
+  color: $white !important;
+  text-transform: uppercase;
+  font-size: rem(10);
+  font-weight: bold;
+}
+
+.img {
+  position: relative;
+  text-align: center;
+  height: rem(250);
+  overflow: hidden;
+  a {
+    display: block;
+    img {
+      min-height: rem(250);
+      max-height: rem(250);
+      max-width: 100%;
+      transition: transform 0.4s ease-in-out;
+    }
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.title {
+  font-size: rem(16);
+  text-transform: uppercase;
+  font-weight: bold;
+  border-top: 1px solid $gray-border;
+  padding-top: rem(15);
+  padding-right: rem(100);
+  position: relative;
+  a {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+
+.descr {
+  padding-right: rem(100);
+  font-style: italic;
+  color: $black-lighten-more;
+}
+
+.sizes {
+  font-style: normal;
+  margin: rem(15) 0 rem(10);
+  span {
+    display: inline-block;
+    margin-right: rem(5);
+    border: 1px solid $gray;
+    line-height: rem(14);
+    border-radius: rem(20);
+    padding: rem(3);
+    min-width: rem(30);
+    text-align: center;
+    margin-bottom: rem(5);
+  }
+}
+
+.price {
+  font-size: rem(26);
+  position: absolute;
+  top: rem(10);
+  right: 0;
+  text-align: right;
+}
+
+.oldPrice {
+  font-size: rem(16);
+  font-weight: normal;
+  text-decoration: line-through;
+  color: $text;
+}
+
+.like {
+  position: absolute;
+  z-index: 100;
+  top: rem(10);
+  right: rem(10);
+  font-size: rem(24);
+  cursor: pointer;
+  color: $black-lighten-more;
+  i {
+    transition: all 0.2s ease-in-out;
+    opacity: 0.2;
+    color: $text;
+  }
+  &:hover {
+    i {
+      opacity: 0.4;
+    }
+  }
+}
+
+.selectedLike {
+  i {
+    opacity: 1 !important;
+  }
+}
+
+.imgRemove {
+  position: absolute;
+  z-index: 100;
+  top: rem(10);
+  right: rem(15);
+}

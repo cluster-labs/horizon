@@ -1,0 +1,81 @@
+@import 'assets/styles/mixins.scss';
+
+.menu {
+  :global(.ant-menu-item-divider) {
+    height: 36px !important;
+    margin-top: 6px !important;
+    width: 1px !important;
+    float: left;
+  }
+
+  :global(.ant-menu-dark) {
+    :global(.ant-menu-item-divider) {
+      background: $text-darken-more !important;
+    }
+
+    .icon {
+      color: $gray-darken;
+    }
+
+    .title {
+      color: $gray-darken;
+    }
+  }
+
+  :global(.ant-menu-light) {
+    .icon {
+      color: $text;
+    }
+
+    .title {
+      color: $text;
+    }
+  }
+}
+
+.logo {
+  height: 48px;
+  width: 200px;
+  background: $menuBg-darken;
+  float: left;
+}
+
+.logoContainer {
+  height: 48px;
+  padding: 9px 20px 0 17px;
+  img {
+    height: 28px;
+  }
+}
+
+.icon {
+  margin-top: rem(16);
+  margin-right: rem(7);
+
+  @media (max-width: $md-max-width) {
+    display: none !important;
+  }
+}
+
+:global(.settings__menuTop) .menu {
+  display: inline-flex;
+  flex-direction: row;
+
+  .icon {
+    order: -1;
+  }
+}
+
+:global(.settings__menuTop .ant-menu-item) {
+  display: inline-flex;
+  flex-direction: row;
+
+  .icon {
+    order: -1;
+  }
+}
+
+:global(.settings__menuTop .ant-menu-light) {
+  border-bottom: none;
+  box-shadow: inset 0 -1px 0 #e8e8e8;
+}

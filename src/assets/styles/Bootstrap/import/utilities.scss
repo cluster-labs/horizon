@@ -1,0 +1,72 @@
+@import 'assets/styles/mixins.scss';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/* UTILITIES */
+
+// font color
+.text {
+  &-muted {
+    color: $text-lighten !important;
+  }
+  &-primary {
+    color: $primary;
+  }
+  &-success {
+    color: $success;
+  }
+  &-info {
+    color: $info;
+  }
+  &-warning {
+    color: $warning;
+  }
+  &-danger {
+    color: $danger;
+  }
+  &-default {
+    color: $default;
+  }
+  &-black {
+    color: $black;
+  }
+}
+
+// background color
+.bg {
+  &-primary {
+    background-color: $primary !important;
+  }
+  &-success {
+    background-color: $success !important;
+  }
+  &-info {
+    background-color: $info !important;
+  }
+  &-warning {
+    background-color: $warning !important;
+  }
+  &-danger {
+    background-color: $danger !important;
+  }
+  &-inverse {
+    background-color: $black-lighten !important;
+  }
+  &-faded {
+    background-color: $gray-lighten-more !important;
+  }
+
+  &-white {
+    background-color: $white !important;
+  }
+  &-default {
+    background-color: $default !important;
+  }
+}
+
+// progress bars
+.progress {
+  background: $gray-lighten-more;
+  &-bar {
+    height: rem(18);
+  }
+}

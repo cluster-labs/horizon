@@ -1,0 +1,172 @@
+@import 'assets/styles/mixins.scss';
+
+.discuss {
+  max-width: rem(1000);
+  margin: 0 auto;
+
+  :global(.fa-check-circle-o) {
+    font-size: rem(16);
+  }
+}
+
+.header {
+  position: relative;
+  border-bottom: 1px solid rgba($black, 0.125);
+  padding-bottom: rem(15);
+  margin-bottom: rem(20);
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.titleText {
+  font-size: rem(32);
+  margin-right: auto;
+}
+
+.open {
+  margin-top: rem(6);
+  margin-bottom: rem(10);
+}
+
+.status {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: rem(10);
+  cursor: default !important;
+}
+
+.metaText {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: rem(6);
+}
+
+.commentAvatar {
+  float: left;
+}
+
+.commentItem {
+  margin-bottom: rem(20);
+}
+
+.contentWrapper {
+  border-radius: 5px;
+  margin-left: rem(70);
+  border: 1px solid rgba(14, 11, 32, 0.15);
+}
+
+.commentsCount,
+.createDate {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sidebarItem {
+  padding-top: rem(15);
+  border-bottom: 1px solid rgba($black, 0.15);
+  padding-bottom: rem(15);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.sidebarHead {
+  font-size: rem(13);
+  font-weight: bold;
+  color: $black;
+  margin-bottom: rem(10);
+}
+
+.participantsList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.participantsItem {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: rem(3);
+  margin-bottom: rem(3);
+}
+
+.commentHead {
+  padding-top: rem(10);
+  padding-left: rem(15);
+  padding-right: rem(15);
+  padding-bottom: rem(10);
+  background-color: rgba($gray-lighten-more, 0.7);
+  border-bottom: 1px solid rgba($black, 0.15);
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 11px;
+    right: 100%;
+    left: -16px;
+    display: block;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-color: transparent;
+    border-style: solid solid outset;
+  }
+
+  &::before {
+    border-width: 8px;
+    border-right-color: #d1d5da;
+  }
+
+  &::after {
+    margin-top: 1px;
+    margin-left: 2px;
+    border-width: 7px;
+    border-right-color: #f6f8fa;
+  }
+}
+
+.emptyCommentHead {
+  background-color: transparent;
+  padding: 0;
+  border-bottom: none;
+
+  &::after {
+    border-right-color: $white;
+  }
+}
+
+.addComment {
+  margin-bottom: rem(40);
+
+  .commentHead {
+    padding-top: rem(5);
+  }
+
+  .commentBottom {
+    padding-top: rem(10);
+    border-top: 1px solid $gray-border;
+  }
+
+  :global(.rdw-editor-wrapper) {
+    border: none;
+  }
+}
+
+.commentContent {
+  padding: rem(15);
+}
+
+.commentBottom {
+  padding-left: rem(15);
+  padding-right: rem(15);
+  padding-bottom: rem(10);
+}

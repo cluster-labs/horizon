@@ -1,0 +1,168 @@
+@import 'assets/styles/mixins.scss';
+
+.mail {
+  overflow-x: hidden;
+  position: relative;
+
+  :global(.card-header) {
+    padding: 0.75rem 1.25rem !important;
+    border-bottom: 1px solid $gray-border !important;
+  }
+}
+
+.sidebar {
+  width: rem(320);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 1px solid $gray-border;
+  overflow-y: auto;
+  height: 100%;
+
+  @media (max-width: $md-max-width) {
+    position: static;
+    width: 100%;
+    border-right: none;
+  }
+
+  :global(.ant-tabs-vertical > .ant-tabs-bar .ant-tabs-tab) {
+    padding: 0;
+  }
+
+  :global(.ant-tabs-vertical.ant-tabs-left > .ant-tabs-bar) {
+    border-right: none;
+  }
+
+  :global(.ant-tabs-bar) {
+    width: 100%;
+  }
+
+  :global(.ant-tabs-ink-bar) {
+    background: none;
+  }
+
+  :global(.ant-tabs-vertical) > :global(.ant-tabs-bar .ant-tabs-tab) {
+    margin: 0;
+    color: $text-darken-more;
+  }
+
+  :global(.ant-tabs-nav .ant-tabs-tab-active) {
+    .tab {
+      background: $default;
+      color: $white;
+      text-align: left;
+    }
+
+    .tabName {
+      color: $white;
+    }
+
+    .tabTime {
+      color: $white;
+    }
+
+    .tabText {
+      color: $white;
+    }
+  }
+}
+
+.sidebarHeader {
+  padding: rem(11) rem(10);
+  border-bottom: 1px solid $gray-border;
+}
+
+.tab {
+  padding: rem(15) rem(15) rem(20);
+  border-bottom: 1px solid $gray-border;
+  text-align: left;
+  &:hover {
+    background: $gray-lighten-more;
+  }
+}
+
+.tabAvatar {
+  float: left;
+}
+
+.tabContent {
+  padding-top: rem(5);
+}
+
+.tabTime {
+  color: $gray-darken;
+  float: right;
+  position: relative;
+  top: rem(3);
+}
+
+.tabName {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: rem(30);
+  text-align: left;
+  color: $text-darken-more;
+}
+
+.tabText {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: $gray-darken;
+  text-align: left;
+}
+
+.contentHeader {
+  border-bottom: 1px solid #e8e8e8;
+  height: 54px;
+
+  :global(.ant-tabs-bar) {
+    border: none;
+  }
+}
+
+.content {
+  margin-left: rem(320);
+  min-height: 700px;
+  :global(.ant-tabs-bar) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $md-max-width) {
+    margin-left: 0;
+  }
+}
+
+.chat {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.item {
+  padding: rem(10) 0;
+}
+
+.itemAvatar {
+  float: left;
+}
+
+.itemContent {
+  padding: rem(10) rem(15);
+  background: #f2f4f8;
+  margin-left: rem(70);
+  border-radius: 5px;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    top: rem(22);
+    left: rem(-14);
+    width: 0;
+    height: 0;
+    display: block;
+    content: '';
+    border: rem(7) solid transparent;
+    border-right-color: #f2f4f8;
+  }
+}

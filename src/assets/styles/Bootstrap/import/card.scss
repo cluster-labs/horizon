@@ -1,0 +1,73 @@
+@import 'assets/styles/mixins.scss';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/* CARDS */
+
+.card,
+.card-header,
+.list-group-item,
+.card-footer {
+  border-color: $gray-border;
+}
+
+.card-header,
+.card-footer {
+  padding-left: rem(30);
+  padding-right: rem(30);
+  background: $white;
+
+  &:last-child {
+    border-radius: 0 0 calc(7px - 1px) calc(7px - 1px);
+  }
+
+  &:first-child {
+    border-radius: calc(7px - 1px) calc(7px - 1px) 0 0;
+  }
+
+  @media (max-width: $md-max-width) {
+    padding-left: rem(20);
+    padding-right: rem(20);
+  }
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: rem(25) rem(30);
+
+  @media (max-width: $md-max-width) {
+    padding-left: rem(20);
+    padding-right: rem(20);
+  }
+}
+
+.card {
+  margin-bottom: rem(30);
+  border-radius: 7px;
+
+  &--withShadow {
+    transition: box-shadow 0.1s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 0 2.25rem #e1e1e1;
+    }
+  }
+
+  &--fullHeight {
+    height: calc(100% - 2.3rem);
+  }
+
+  @at-root {
+    .utils__content > & {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.card--example {
+  border: 1px solid $gray-border !important;
+  .card-header > h5 {
+    margin-bottom: 0;
+  }
+}

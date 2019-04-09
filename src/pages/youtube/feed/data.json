@@ -1,0 +1,194 @@
+{
+  "partitions": [{
+    "name": "Recommended",
+    "videos": [{
+      "cover": "resources/images/photos/1.jpeg",
+      "name": "Stay in Malibu",
+      "author": "Samuel Lewin",
+      "views": "682,079"
+    }, {
+      "cover": "resources/images/photos/2.jpeg",
+      "name": "The climb into the mountains",
+      "author": "Kayla Mercer",
+      "views": "24,921"
+    }, {
+      "cover": "resources/images/photos/3.jpeg",
+      "name": "The art of macro photography",
+      "author": "Jennifer Neal",
+      "views": "322,234"
+    }, {
+      "cover": "resources/images/photos/4.jpeg",
+      "name": "Downhill",
+      "author": "Kevin Addington",
+      "views": "864,092"
+    }, {
+      "cover": "resources/images/photos/5.jpeg",
+      "name": "The ascent of Elbrus",
+      "author": "Jason Walter",
+      "views": "411,011"
+    }, {
+      "cover": "resources/images/photos/4.jpeg",
+      "name": "Trip to the zoo",
+      "author": "Trinity Parson",
+      "views": "26,013"
+    }, {
+      "cover": "resources/images/photos/3.jpeg",
+      "name": "Downhill",
+      "author": "Kevin Addington",
+      "views": "864,092"
+    }, {
+      "cover": "resources/images/photos/2.jpeg",
+      "name": "A shadow in the night",
+      "author": "Isaac Owen",
+      "views": "342,852"
+    }, {
+      "cover": "resources/images/photos/1.jpeg",
+      "name": "Web Design Tutorial",
+      "author": "Seth Morrison",
+      "views": "52,322"
+    }, {
+      "cover": "resources/images/photos/5.jpeg",
+      "name": "Design Tutorials",
+      "author": "Nick Groover",
+      "views": "14,938"
+    }, {
+      "cover": "resources/images/photos/2.jpeg",
+      "name": "The ascent of Elbrus",
+      "author": "Jason Walter",
+      "views": "411,011"
+    }, {
+      "cover": "resources/images/photos/3.jpeg",
+      "name": "Night",
+      "author": "Gabe",
+      "views": "134,837"
+    }]
+  }, {
+    "name": "Nature",
+    "cover": "resources/images/photos/2.jpeg",
+    "videos": [{
+      "cover": "resources/images/photos/1.jpeg",
+      "name": "Stay in Malibu",
+      "author": "Samuel Lewin",
+      "views": "682,079"
+    }, {
+      "cover": "resources/images/photos/2.jpeg",
+      "name": "The climb into the mountains",
+      "author": "Kayla Mercer",
+      "views": "24,921"
+    }, {
+      "cover": "resources/images/photos/3.jpeg",
+      "name": "The art of macro photography",
+      "author": "Jennifer Neal",
+      "views": "322,234"
+    }, {
+      "cover": "resources/images/photos/4.jpeg",
+      "name": "Downhill",
+      "author": "Kevin Addington",
+      "views": "864,092"
+    }, {
+      "cover": "resources/images/photos/5.jpeg",
+      "name": "The ascent of Elbrus",
+      "author": "Jason Walter",
+      "views": "411,011"
+    }, {
+      "cover": "resources/images/photos/3.jpeg",
+      "name": "Trip to the zoo",
+      "author": "Trinity Parson",
+      "views": "26,013"
+    }, {
+      "cover": "resources/images/photos/4.jpeg",
+      "name": "Downhill",
+      "author": "Kevin Addington",
+      "views": "864,092"
+    }, {
+      "cover": "resources/images/photos/5.jpeg",
+      "name": "A shadow in the night",
+      "author": "Isaac Owen",
+      "views": "342,852"
+    }, {
+      "cover": "resources/images/photos/1.jpeg",
+      "name": "Web Design Tutorial",
+      "author": "Seth Morrison",
+      "views": "52,322"
+    }, {
+      "cover": "resources/images/photos/2.jpeg",
+      "name": "Design Tutorials",
+      "author": "Nick Groover",
+      "views": "14,938"
+    }, {
+      "cover": "resources/images/photos/3.jpeg",
+      "name": "The ascent of Elbrus",
+      "author": "Jason Walter",
+      "views": "411,011"
+    }, {
+      "cover": "resources/images/photos/4.jpeg",
+      "name": "Night",
+      "author": "Gabe",
+      "views": "134,837"
+    }]
+  }, {
+    "name": "City",
+    "cover": "resources/images/photos/3.jpeg",
+    "videos": [{
+      "cover": "resources/images/photos/1.jpeg",
+      "name": "Stay in Malibu",
+      "author": "Samuel Lewin",
+      "views": "682,079"
+    }, {
+      "cover": "resources/images/photos/2.jpeg",
+      "name": "The climb into the mountains",
+      "author": "Kayla Mercer",
+      "views": "24,921"
+    }, {
+      "cover": "resources/images/photos/3.jpeg",
+      "name": "The art of macro photography",
+      "author": "Jennifer Neal",
+      "views": "322,234"
+    }, {
+      "cover": "resources/images/photos/4.jpeg",
+      "name": "Downhill",
+      "author": "Kevin Addington",
+      "views": "864,092"
+    }, {
+      "cover": "resources/images/photos/5.jpeg",
+      "name": "The ascent of Elbrus",
+      "author": "Jason Walter",
+      "views": "411,011"
+    }, {
+      "cover": "resources/images/photos/2.jpeg",
+      "name": "Trip to the zoo",
+      "author": "Trinity Parson",
+      "views": "26,013"
+    }, {
+      "cover": "resources/images/photos/3.jpeg",
+      "name": "Downhill",
+      "author": "Kevin Addington",
+      "views": "864,092"
+    }, {
+      "cover": "resources/images/photos/4.jpeg",
+      "name": "A shadow in the night",
+      "author": "Isaac Owen",
+      "views": "342,852"
+    }, {
+      "cover": "resources/images/photos/1.jpeg",
+      "name": "Web Design Tutorial",
+      "author": "Seth Morrison",
+      "views": "52,322"
+    }, {
+      "cover": "resources/images/photos/3.jpeg",
+      "name": "Design Tutorials",
+      "author": "Nick Groover",
+      "views": "14,938"
+    }, {
+      "cover": "resources/images/photos/2.jpeg",
+      "name": "The ascent of Elbrus",
+      "author": "Jason Walter",
+      "views": "411,011"
+    }, {
+      "cover": "resources/images/photos/5.jpeg",
+      "name": "Night",
+      "author": "Gabe",
+      "views": "134,837"
+    }]
+  }]
+}

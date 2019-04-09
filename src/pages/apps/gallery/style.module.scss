@@ -1,0 +1,62 @@
+@import 'assets/styles/mixins.scss';
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: rem(200);
+  height: rem(160);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  background-position: center;
+  background-size: cover;
+  @media (max-width: $sm-max-width) {
+    width: 100%;
+    height: rem(270);
+  }
+  @include transition-fast();
+  &:hover {
+    transform: scale(1.1);
+    z-index: 2;
+
+    .itemControls {
+      display: block;
+    }
+  }
+}
+
+.withControls {
+  &:before {
+    position: absolute;
+    top: rem(-15);
+    right: rem(-15);
+    width: 0;
+    height: 0;
+    content: '';
+    z-index: 3;
+    border: rem(15) solid transparent;
+    border-bottom-color: $primary;
+    transform: rotate(45deg);
+  }
+}
+
+.itemControls {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: rem(57) rem(20) 0;
+  text-align: center;
+  background: rgba($black, 0.8);
+
+  @media (max-width: $md-max-width) {
+    text-align: left;
+    padding-top: rem(20);
+  }
+}

@@ -1,0 +1,89 @@
+@import 'assets/styles/mixins.scss';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  THEME SETTINGS STYLES */
+
+.settings {
+  &__fixedWidth {
+    max-width: 1420px;
+    margin: 0 auto;
+
+    &:not(.settings__menuTop) {
+      .utils__content {
+        padding-right: 0;
+      }
+
+      div[class^='style-module__inner'] {
+        margin-right: 0;
+      }
+
+      @media (max-width: 1445px) {
+        .utils__content {
+          padding-right: rem(30);
+        }
+
+        div[class^='style-module__inner'] {
+          margin-right: rem(30);
+        }
+      }
+    }
+
+    &.settings__menuTop {
+      .utils__content {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      div[class^='style-module__inner'] {
+        margin: 0;
+      }
+
+      @media (max-width: 1445px) {
+        .utils__content {
+          padding-left: rem(30);
+          padding-right: rem(30);
+        }
+
+        div[class^='style-module__inner'] {
+          margin: 0 rem(30);
+        }
+      }
+    }
+  }
+
+  &__squaredBorders {
+    .card {
+      border-radius: 0;
+    }
+  }
+
+  &__menuShadow {
+    .ant-layout-sider {
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 0 200px -20px rgba(57, 55, 73, 0.4);
+    }
+  }
+
+  &__borderLess {
+    .card {
+      border: none;
+    }
+
+    .card-header {
+      padding-top: rem(20);
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .card-footer {
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    .utils__title {
+      text-transform: uppercase;
+      font-size: rem(16);
+    }
+  }
+}

@@ -1,0 +1,15 @@
+// Import mixins
+@import 'assets/styles/mixins.scss';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  ANT DESIGN MENU */
+
+.ant-menu-item {
+  outline: none !important;
+}
+
+.ant-menu-dark.ant-menu-submenu-popup {
+  .ant-menu-item-divider {
+    opacity: 0.2;
+  }
+}

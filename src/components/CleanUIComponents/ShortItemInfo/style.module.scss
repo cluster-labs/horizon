@@ -1,0 +1,74 @@
+@import 'assets/styles/mixins.scss';
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  border-top: 1px dashed $gray-border;
+  padding-top: rem(15);
+
+  &:first-child {
+    border-top: none;
+  }
+}
+
+.large {
+  .name {
+    font-size: rem(16);
+  }
+
+  .note {
+    font-size: rem(13);
+  }
+
+  .actionData {
+    font-size: rem(20);
+  }
+}
+
+.borderedBottom {
+  border-bottom: 1px dashed $gray-border;
+}
+
+.img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-right: rem(15);
+  margin-bottom: rem(15);
+
+  img {
+    width: rem(55);
+    height: rem(55);
+  }
+}
+
+.description {
+  flex-grow: 1;
+  padding-right: rem(15);
+  margin-right: auto;
+  margin-bottom: rem(15);
+}
+
+.name {
+  font-size: rem(13);
+  font-weight: 700;
+}
+
+.note {
+  font-weight: 300;
+  font-size: rem(11);
+  margin-bottom: 0;
+  color: $gray-darken;
+}
+
+.actionData {
+  margin-bottom: rem(15);
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: rem(16);
+}

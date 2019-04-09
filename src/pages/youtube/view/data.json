@@ -1,0 +1,65 @@
+{
+  "viewData": {
+    "url": "http://cleanhtmlplayer.com/cdn/video/media/1.mp4",
+    "cover": "http://cleanhtmlplayer.com/cdn/video/media/1.jpg",
+    "type": "m4v",
+    "date": "Jan 9, 2017",
+    "title": "Blond Woman In White Bikini Sitting On Grass",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam dolorum ut quia itaque voluptate officiis, dolorem qui repellat numquam, nam natus, mollitia explicabo minus minima dicta quaerat molestias ab. Tempora nobis nostrum voluptatem voluptatibus libero sint nulla labore aliquid enim et, deleniti distinctio amet aut dolores perferendis eum totam voluptatum.",
+    "accountImg": "resources/images/avatars/1.jpg",
+    "comments": [{
+      "avatar": "resources/images/avatars/3.jpg",
+      "name": "Ashley Goodwether",
+      "date": "11 May 2016 18:13AM",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Ipsum is simply dummy lorem",
+      "likesCount": 26
+    }, {
+      "avatar": "resources/images/avatars/4.jpg",
+      "name": "Blackford May",
+      "date": "11 May 2016 19:21AM",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Ipsum is simply dummy lorem",
+      "likesCount": 12
+    }]
+  },
+  "upNext": [{
+    "cover": "resources/images/photos/1.jpeg",
+    "name": "Stay in Malibu",
+    "author": "Samuel Lewin",
+    "views": "682,079"
+  }, {
+    "cover": "resources/images/photos/2.jpeg",
+    "name": "The climb into the mountains",
+    "author": "Kayla Mercer",
+    "views": "24,921"
+  }, {
+    "cover": "resources/images/photos/3.jpeg",
+    "name": "The art of macro photography",
+    "author": "Jennifer Neal",
+    "views": "322,234"
+  }, {
+    "cover": "resources/images/photos/4.jpeg",
+    "name": "Downhill",
+    "author": "Kevin Addington",
+    "views": "864,092"
+  }, {
+    "cover": "resources/images/photos/5.jpeg",
+    "name": "The ascent of Elbrus",
+    "author": "Jason Walter",
+    "views": "411,011"
+  }, {
+    "cover": "resources/images/photos/1.jpeg",
+    "name": "Trip to the zoo",
+    "author": "Trinity Parson",
+    "views": "26,013"
+  }, {
+    "cover": "resources/images/photos/3.jpeg",
+    "name": "Downhill",
+    "author": "Kevin Addington",
+    "views": "864,092"
+  }, {
+    "cover": "resources/images/photos/4.jpeg",
+    "name": "A shadow in the night",
+    "author": "Isaac Owen",
+    "views": "342,852"
+  }]
+}

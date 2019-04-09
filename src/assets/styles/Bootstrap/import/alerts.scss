@@ -1,0 +1,50 @@
+@import 'assets/styles/mixins.scss';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/* ALERTS */
+
+.alert {
+  border: none;
+  font-weight: normal;
+  color: $white;
+  .close {
+    color: $white;
+    opacity: 0.5;
+    outline: none !important;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  a,
+  .alert-link {
+    font-weight: normal;
+    color: $white;
+    opacity: 0.7;
+    @include transition-color();
+    &:hover {
+      opacity: 1;
+      color: $white;
+    }
+  }
+  &.alert-default {
+    background: $default;
+  }
+  &.alert-primary {
+    background: $primary;
+  }
+  &.alert-secondary {
+    background: $secondary;
+  }
+  &.alert-success {
+    background: $success;
+  }
+  &.alert-info {
+    background: $info;
+  }
+  &.alert-warning {
+    background: $warning;
+  }
+  &.alert-danger {
+    background: $danger;
+  }
+}

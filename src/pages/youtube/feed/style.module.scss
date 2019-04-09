@@ -1,0 +1,71 @@
+@import 'assets/styles/mixins.scss';
+
+.feed {
+  max-width: rem(1250);
+  margin: 0 auto;
+}
+
+.partition {
+  padding-bottom: rem(10);
+  margin-bottom: rem(30);
+  border-bottom: 1px solid $gray-border;
+}
+
+.titleThumb {
+  height: rem(28);
+  width: rem(28);
+  vertical-align: sub;
+  border-radius: 5px;
+}
+
+.title {
+  font-size: rem(24);
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.partitionContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  width: 196px;
+  padding-top: rem(15);
+  margin-right: rem(5);
+  margin-left: rem(5);
+  margin-bottom: rem(20);
+}
+
+.itemLink {
+  display: block;
+}
+
+.itemThumb {
+  width: 100%;
+}
+
+.itemDescr {
+  cursor: pointer;
+}
+
+.itemName {
+  display: block;
+  font-size: rem(14);
+  font-weight: 700;
+  margin: rem(10) 0 rem(5);
+}
+
+.itemAuthor {
+  display: block;
+}
+
+.itemViews {
+  display: block;
+}

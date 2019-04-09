@@ -1,0 +1,42 @@
+{
+  "name": "Beautiful Chair for Kids",
+  "sku": "0000235",
+  "rate": 4.5,
+  "images": ["resources/images/ecommerce/001.jpg",
+    "resources/images/ecommerce/002.jpg",
+    "resources/images/ecommerce/003.jpg",
+    "resources/images/ecommerce/004.jpg"],
+  "price": 189.95,
+  "oldPrice": 220.95,
+  "shortDescr": "A chair is a piece of furniture with a raised surface, commonly used to seat a single person. Chairs are supported most often by four legs and have a back; however, a chair can have three legs or can have a different shape.",
+  "properties": [
+    {
+      "name": "Item Weight",
+      "value": "18 pounds"
+    },
+    {
+      "name":"Product Dimensions",
+      "value": "13 x 40 x 13 inches"
+    },
+    {
+      "name":"Item model number",
+      "value": "100001"
+    },
+    {
+      "name":"Assembled Height",
+      "value": "13 inches"
+    },
+    {
+      "name":"Assembled Width",
+      "value": "13 inches"},
+    {
+      "name": "Assembled Length",
+      "value": "40 inches"
+    },
+    {
+      "name": "Weight",
+      "value": "23 Pounds"
+    }
+  ],
+  "description": "Mnesarchum velit cumanum utuntur tantam deterritum, democritum vulgo contumeliae abest studuisse quanta telos. Inmensae. Arbitratu dixisset invidiae ferre constituto gaudeat contentam, omnium nescius, consistat interesse animi, amet fuisset numen graecos incidunt euripidis praesens, homines religionis dirigentur postulant. Magnum utrumvis gravitate appareat fabulae facio perveniri fruenda indicaverunt texit, frequenter probet diligenter sententia meam distinctio theseo legerint corporis quoquo, optari futurove expedita."
+}

@@ -1,0 +1,64 @@
+@import 'assets/styles/mixins.scss';
+
+.settings {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: $gray-lighten-more;
+  width: 256px;
+  z-index: 10000;
+  height: 100%;
+  transform: translate3d(256px, 0, 0);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.settingsOpened {
+  transform: translate3d(0, 0, 0);
+  box-shadow: 0 0 200px -20px rgba(57, 55, 73, 0.4);
+}
+
+.close {
+  background: none;
+  border: none;
+  outline: none !important;
+  cursor: pointer;
+}
+
+.container {
+  padding: rem(22) rem(20);
+  width: 256px;
+}
+
+.title {
+  font-weight: bold;
+  border-bottom: 1px solid $gray-border;
+  padding-bottom: rem(20);
+  margin-bottom: rem(20);
+
+  :global(.fa) {
+    float: right;
+    cursor: pointer;
+    padding: 4px 2px;
+    opacity: 0.4;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.description {
+  font-size: 12px;
+  margin-bottom: rem(20);
+  color: $text-lighten;
+}
+
+.item {
+  margin-bottom: rem(15);
+}
+
+.itemLabel {
+  position: relative;
+  top: 2px;
+  margin-left: 10px;
+}

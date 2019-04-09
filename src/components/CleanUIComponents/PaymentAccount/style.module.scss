@@ -1,0 +1,50 @@
+@import 'assets/styles/mixins.scss';
+
+.account {
+  padding: rem(30) rem(30);
+  position: relative;
+  transition: box-shadow 0.1s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 2.25rem #e1e1e1;
+  }
+}
+
+.icon {
+  position: absolute;
+  top: rem(25);
+  right: rem(30);
+  i {
+    font-size: rem(42);
+    color: $gray-darken;
+  }
+}
+
+.number {
+  display: block;
+  font-size: rem(21);
+  color: $black;
+  font-weight: bold;
+}
+
+.sum {
+  display: block;
+  font-size: rem(18);
+  margin-bottom: rem(20);
+  color: $text;
+
+  @media (max-width: $md-max-width) {
+    right: auto;
+    left: rem(10);
+  }
+}
+
+.footer {
+  text-align: center;
+  border-top: 1px solid $gray-border;
+  color: $text;
+  padding-top: rem(10);
+  margin-bottom: rem(-15);
+  font-style: italic;
+  font-size: rem(13);
+}

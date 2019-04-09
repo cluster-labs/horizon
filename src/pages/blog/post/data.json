@@ -1,0 +1,57 @@
+{
+  "articleData": {
+    "name": "The Secret To Your Self-Motivation",
+    "author": "Trinity Parson",
+    "authorAvatar": "resources/images/avatars/3.jpg",
+    "authorStatus": "I hope you enjoy reading this as much as I enjoyed writing this.",
+    "date": "June 12, 2017",
+    "tags": ["Travel", "Ideas", "Lifestyle"],
+    "cover": "resources/images/photos/1.jpeg",
+    "content": "<div class=\"article-media\">    <img src=\"resources/images/photos/1.jpeg\" alt=\"Man on mountains\">    </div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil laborum est perferendis consectetur corporis esse labore minima molestias, exercitationem consequuntur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil laborum est perferendis consectetur corporis esse labore minima molestias, exercitationem consequuntur!</p>    <blockquote class=\"blockquote\">    <p class=\"mb-0\">    Led cursus ante dapibus diam. Sed nisi. Nulla quis sem    at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.    at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.    Fusce nec tellus sed augue semper porta. Mauris massa.    </p>    <footer class=\"blockquote-footer\">    Someone famous in    <cite title=\"Source Title\">Source Title</cite>    </footer>    </blockquote>    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil laborum est perferendis consectetur corporis esse labore minima molestias, exercitationem consequuntur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil laborum est perferendis consectetur corporis esse labore minima molestias, exercitationem consequuntur!</p>    <div class=\"article-media\">    <img src=\"resources/images/photos/2.jpeg\" alt=\"Man on mountains\">    </div>    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil laborum est perferendis consectetur corporis esse labore minima molestias, exercitationem consequuntur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil laborum est perferendis consectetur corporis esse labore minima molestias, exercitationem consequuntur!</p>    <blockquote class=\"blockquote blockquote-reverse\">    <p class=\"mb-0\">    Led cursus ante dapibus diam. Sed nisi. Nulla quis sem    at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.    at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.    Fusce nec tellus sed augue semper porta. Mauris massa.    </p>    <footer class=\"blockquote-footer\">    Someone famous in    <cite title=\"Source Title\">Source Title</cite>    </footer>    </blockquote>"
+  },
+  "comments": [{
+    "avatar": "resources/images/avatars/4.jpg",
+    "name": "John Blake",
+    "date": "10 May 2016 11:03AM",
+    "content": "<div><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Ipsum is simply dummy lorem</p></div>",
+    "likesCount": 21,
+    "commentsCount": 2,
+    "subComments": [{
+      "avatar": "resources/images/avatars/1.jpg",
+      "name": "Donald Trump",
+      "date": "11 May 2016 18:13AM",
+      "content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Ipsum is simply dummy lorem</p>",
+      "likesCount": 26
+    }, {
+      "avatar": "resources/images/avatars/4.jpg",
+      "name": "Blackford May",
+      "date": "11 May 2016 19:21AM",
+      "content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Ipsum is simply dummy lorem</p>",
+      "likesCount": 26
+    }]
+  }, {
+    "avatar": "resources/images/avatars/4.jpg",
+    "name": "John Blake",
+    "date": "10 May 2016 11:03AM",
+    "content": "<div><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Ipsum is simply dummy lorem</p></div>",
+    "likesCount": 21,
+    "commentsCount": 2
+  }],
+  "articlesCategories": ["Travel", "Ideas", "Lifestyle", "Art", "Music", "Cars", "Girls", "Drugs"],
+  "latesArticlesData": [{
+    "cover": "resources/images/photos/4.jpeg",
+    "name": "Web design tutorial",
+    "date": "June 11, 2017",
+    "author": "Setch Morrison"
+  }, {
+    "cover": "resources/images/photos/5.jpeg",
+    "name": "Cats in my house",
+    "date": "June 10, 2017",
+    "author": "Adrian Mason"
+  }, {
+    "cover": "resources/images/photos/2.jpeg",
+    "name": "Attractions of our city",
+    "date": "June 9, 2017",
+    "author": "Mike Freeman"
+  }]
+}

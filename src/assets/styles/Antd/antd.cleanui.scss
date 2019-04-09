@@ -1,0 +1,18 @@
+body {
+  // overriding (making high level priority) antd styles by wrapping this styles body tag
+  @import 'import/backtop';
+  @import 'import/badge';
+  @import 'import/calendar';
+  @import 'import/cascader';
+  @import 'import/dropdown';
+  @import 'import/form';
+  @import 'import/input';
+  @import 'import/modal';
+  @import 'import/select';
+  @import 'import/slider';
+  @import 'import/spin';
+  @import 'import/layout';
+  @import 'import/notification';
+  @import 'import/progress';
+  @import 'import/menu';
+}

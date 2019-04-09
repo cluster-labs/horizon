@@ -1,0 +1,45 @@
+{
+ "articlesData": [
+   {
+     "name": "The Secret To Your Self-Motivation",
+     "author": "Trinity Parson",
+     "date": "June 12, 2017",
+     "tags": ["Travel", "Ideas", "Lifestyle"],
+     "cover": "resources/images/photos/1.jpeg",
+     "shortContent": "<p>Neuroscience has discovered the remarkably simple source for endless self-motivation. We can do anything we set our minds to. But sometimes it can feel like our brains are working against us when it comes to achieving our goals. Plans to learn a new skill, get in shape, or to save money and start a business, keep getting pushed back in the hopes that Future You will handle it “someday.” It’s a crippling behavioral cycle. In fact, in psychology, procrastination is classified as a form of self-sabotage.</p>"
+   },
+   {
+     "name": "This Is Your Life in Silicon Valley",
+     "author": "Sunil Rajaraman",
+     "date": "Aug 15, 2016",
+     "tags": ["Startup", "San Francisco", "Balance", "This Just In"],
+     "cover": "resources/images/photos/2.jpeg",
+     "shortContent": "<p>You wake up at 6:30 a.m. after an Ambien-induced sleep. It’s Friday. Last night at the Rosewood was pretty intense — you had to check out Madera and see if there is any truth to the long-running Silicon Valley rumors. You were disappointed, but at least you did get to see a few GPs from prominent VC firms at the bar. Did they notice you? Did you make eye contact? You remind yourself that they are not real celebrities — only well known in a 15-mile radius to the TechCrunch-reading crowd.<p>"
+   },
+   {
+     "name": "You Make Or Break Your Life Between 5-7 AM",
+     "author": "Benjamin P. Hardy",
+     "date": "Jan 10, 2016",
+     "tags": ["Self Improvement", "Productivity", "Entrepreneurship", "Life Lessons"],
+     "cover": "resources/images/photos/3.jpeg",
+     "shortContent": "<p>If you haven’t yet joined the 5AM club, you don’t know what you’re missing. It’s the equivalent of me telling you how good a certain chocolate cake is. You can only really know if you taste the cake yourself. You won’t know how motivating, clarifying, and empowering it is until you experience it yourself. Your identity and personality are shaped by your behavior. Change your choices, change your life. Will waking up early sometimes suck?<p>"
+   }
+ ],
+ "articlesCategories": ["Travel", "Ideas", "Lifestyle", "Art", "Music", "Cars", "Girls", "Drugs"],
+  "latesArticlesData": [{
+    "cover": "resources/images/photos/4.jpeg",
+    "name": "Web design tutorial",
+    "date": "June 11, 2017",
+    "author": "Setch Morrison"
+  }, {
+    "cover": "resources/images/photos/5.jpeg",
+    "name": "Cats in my house",
+    "date": "June 10, 2017",
+    "author": "Adrian Mason"
+  }, {
+    "cover": "resources/images/photos/2.jpeg",
+    "name": "Attractions of our city",
+    "date": "June 9, 2017",
+    "author": "Mike Freeman"
+  }]
+}
