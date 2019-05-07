@@ -24,6 +24,7 @@ if (process.env.NODE_ENV === 'development' && true) {
   middlewares.push(logger)
 }
 const store = createStore(reducers(history), compose(applyMiddleware(...middlewares)))
+window.store = store
 sagaMiddleware.run(sagas)
 
 ReactDOM.render(
