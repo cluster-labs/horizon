@@ -37,4 +37,5 @@ This will start the dashboard on PORT `3000` by default.
 Please add your feature requests & report Bugs [**here**](https://github.com/cluster-labs/horizon/issues)
 
 #### Contribute
+
 You can contribute to the project by submitting a PR or contacting me at [**vasa@towardsblockchain.com**](mailto:vasa@towardsblockchain.com)
