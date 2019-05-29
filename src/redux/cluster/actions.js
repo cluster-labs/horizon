@@ -63,12 +63,10 @@ const getAllStats = payload => dispatch => {
         ipfsCluster.id(),
         ipfsCluster.status(),
         ipfsCluster.health.graph(),
-        //ipfsCluster.health.metrics(name, [options]),
-        ipfsCluster.monitor('freespace'),
-        ipfsCluster.monitor('ping'),
+        ipfsCluster.health.metrics('freespace'),
+        ipfsCluster.health.metrics('ping'),
         ipfsCluster.peers.ls(),
-        ipfsCluster.pins.ls(),
-        ipfsCluster.allocations({ filter: 'all'})
+        ipfsCluster.pin.ls(),
       ];
       Promise.all(promises)
       .then(stats => {
@@ -77,15 +75,13 @@ const getAllStats = payload => dispatch => {
               status: stats[1],
               health: {
                   graph: stats[2],
-                  metrics: null
-              },
-              monitor: {
-                  freespace: stats[3],
-                  ping: stats[4] 
+                  metrics: {
+                      freespace: stats[3],
+                      ping: stats[4]
+                  }
               },
               peers: stats[5],
               pins: stats[6],
-              allocations: stats[7]
           }
 
         dispatch({
@@ -109,8 +105,8 @@ const getFileStructure = payload => dispatch => {
 
       let promises = [
             ipfsCluster.id(),
-            ipfsCluster.monitor('freespace'),
-            ipfsCluster.pins.ls()
+            ipfsCluster.health.metrics('freespace'),
+            ipfsCluster.pin.ls()
         ]
       Promise.all(promises)
       .then((data) => {

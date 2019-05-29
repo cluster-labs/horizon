@@ -41,9 +41,9 @@ class Devices extends Component {
 
   render() {
 
-    var { cluster } = this.props     
+    var { cluster } = this.props
     
-    var freespace = cluster.monitor ? formatBytes(cluster.monitor.freespace[0].value, 3) : ""
+    var freespace = cluster.health ? formatBytes(cluster.health.metrics.freespace[0].value, 3) : ""
 
     var peerList = cluster.peers ? cluster.peers.map((peer, index) => {
       return <Card key={index} style={{ width: 490, marginTop: 16 }} loading={!cluster.peers}>
@@ -100,12 +100,14 @@ class Devices extends Component {
               <Input placeholder="new node multihash" />
               <br/><br/>
               <Button type="primary" shape="round" icon="plus" size={"large"}>Add</Button>
+              &nbsp;&nbsp;<span>Feature in development</span>
             </div>
             <div className="col-sm">
               <h5>Remove a Cluster peer</h5>
               <Input placeholder="node multihash" />
               <br/><br/>
               <Button type="danger" shape="round" icon="minus" size={"large"}>Remove</Button>
+              &nbsp;&nbsp;<span>Feature in development</span>
             </div>
           </div>
         </div>

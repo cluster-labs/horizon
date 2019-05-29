@@ -2,10 +2,9 @@ import React, { Component, Fragment } from 'react'
 import statsActions from '../../../redux/cluster/actions' 
 import { connect } from 'react-redux'
 import formatBytes from '../../../utils/formatBytes'
-import { Input, Card, Avatar, Button } from 'antd'
-const { Meta } = Card;
-
-import ipfs from '../../../utils/ipfs-http-client'
+import { Input, Card, Avatar, Button, Empty } from 'antd'
+const { Meta } = Card
+//import ipfs from '../../../utils/ipfs-http-client'
 
 class Devices extends Component {
 
@@ -54,7 +53,7 @@ class Devices extends Component {
       folders: []
     };
 
-    cluster.pins && cluster.pins[0].Hash ? cluster.pins.map((pin) => {
+    cluster.pins && cluster.pins[0] ? cluster.pins.map((pin) => {
       return pin.isDir ? fileStructure.folders.push(pin.Hash['/']) : fileStructure.files.push(pin.Hash['/'])
     }) : []
 
@@ -68,6 +67,8 @@ class Devices extends Component {
     </Card>
     })
 
+    files.length == 0 ? files = <Empty /> : null
+
     var folders = fileStructure.folders.map((folder, index) => {
       return <Card key={index} style={{ width: 490, marginTop: 16 }} loading={false}>
             <Meta
@@ -78,6 +79,8 @@ class Devices extends Component {
           </Card>
     })
 
+    folders.length == 0 ? folders = <Empty /> : null
+
     return (
       <Fragment>
         <h3><b>Cluster ID</b></h3> 
@@ -87,11 +90,11 @@ class Devices extends Component {
         <br /><br />
         
         <h4><b>Folders</b></h4>
-        { folders }
+        { folders || <Empty /> }
 
         <br /><br />
         <h4><b>Files</b></h4>
-        { files }
+        { files || <Empty /> }
       </Fragment>
     )
   }
