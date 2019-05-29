@@ -44,7 +44,7 @@
     "enquire-js": "^0.2.1",
     "firebase": "^5.8.2",
     "history": "^4.7.2",
-    "ipfs-cluster-api": "0.0.2",
+    "ipfs-cluster-api": "0.0.9",
     "ipfs-http-client": "^30.1.4",
     "ipfs-unixfs": "^0.1.16",
     "lodash": "^4.17.11",
