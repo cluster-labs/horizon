@@ -9,6 +9,7 @@ class Devices extends Component {
 
   componentWillMount(){
     this.props.getAllStats()
+    setInterval(this.props.getAllStats, 5000)
   }
 
   parseStatus = (item) => {
@@ -46,7 +47,7 @@ class Devices extends Component {
     var freespace = cluster.health ? formatBytes(cluster.health.metrics.freespace[0].value, 3) : ""
 
     var peerList = cluster.peers ? cluster.peers.map((peer, index) => {
-      return <Card key={index} style={{ width: 490, marginTop: 16 }} loading={!cluster.peers}>
+      return <Card key={index} style={{ width: 530, marginTop: 16 }} loading={!cluster.peers}>
             <Meta
               avatar={<Avatar shape="square" src="https://d36jcksde1wxzq.cloudfront.net/be7833db9bddb4494d2a7c3dd659199a.png" />}
               title={peer.peername || "Anonymous"}
@@ -76,7 +77,7 @@ class Devices extends Component {
     if(cluster.health) {
       let peerList = this.ipfsPeerList(cluster.health.graph.ipfs_links)
       ipfsLinks = peerList.peers.map((peer, index) => {
-        return <Card key={index} style={{ width: 490, marginTop: 16 }} loading={!cluster.peers}>
+        return <Card key={index} style={{ width: 530, marginTop: 16 }} loading={!cluster.peers}>
         <Meta
           avatar={<Avatar shape="square" src="https://dashboard.snapcraft.io/site_media/appmedia/2017/11/ipfs.ico.png" />}
           title={`Peer ${index+1}`}
