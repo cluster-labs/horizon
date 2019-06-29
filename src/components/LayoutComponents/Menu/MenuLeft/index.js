@@ -107,7 +107,6 @@ class MenuLeft extends React.Component {
 
   generateMenuItems = () => {
     const { menuData = [] } = this.props
-    console.log("Props:")
     const generateItem = item => {
       const { key, title, url, icon, disabled, pro } = item
       if (item.divider) {

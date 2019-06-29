@@ -14,7 +14,7 @@ const initialState = {
   ...STORED_SETTINGS({
     isMobileView: false,
     isMobileMenuOpen: false,
-    isLightTheme: true,
+    isLightTheme: false,
     isSettingsOpen: false,
     isMenuTop: false,
     isMenuCollapsed: false,
@@ -29,7 +29,7 @@ const initialState = {
 export default function userReducer(state = initialState, action) {
   switch (action.type) {
     case actions.SET_STATE:
-      return { ...state, ...action.payload }
+      return { ...state, ...action.payload, isLightTheme: false }
     default:
       return state
   }
