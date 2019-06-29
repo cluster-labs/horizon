@@ -65,47 +65,51 @@ class Devices extends Component {
     }) : []
 
     var files = fileStructure.files.map((file, index) => {
-      return <Card key={index} style={{ width: 490, marginTop: 16 }} loading={false}>
-        <Meta
-          avatar={<Avatar shape="square" src={fileLogo} />}
-          title={
-            <React.Fragment>
-              <div className="row m-0 justify-content-between">
-                {file.name === "" ? "[FILE]" : file.name}
-                {<i
-                  style={{ cursor: 'pointer' }}
-                  onClick={() => removePins(file.cid)}
-                  className=" text-danger fa fa-thumb-tack">
+      return <a href={`http://localhost:8080/ipfs/${file.cid}`} target="_blank">
+        <Card key={index} style={{ width: 490, marginTop: 16, cursor: 'pointer' }} loading={false}>
+          <Meta
+            avatar={<Avatar shape="square" src={fileLogo} />}
+            title={
+              <React.Fragment>
+                <div className="row m-0 justify-content-between">
+                  {file.name === "" ? "[FILE]" : file.name}
+                  {<i
+                    style={{ cursor: 'pointer' }}
+                    onClick={() => removePins(file.cid)}
+                    className=" text-danger fa fa-thumb-tack">
 
-                </i>}
-              </div>
-            </React.Fragment>
-          }
-          description={file.cid}
-        />
-      </Card>
+                  </i>}
+                </div>
+              </React.Fragment>
+            }
+            description={file.cid}
+          />
+        </Card>
+      </a>
     })
 
     var folders = fileStructure.folders.map((folder, index) => {
-      return <Card key={index} style={{ width: 490, marginTop: 16 }} loading={false}>
-        <Meta
-          avatar={<Avatar shape="square" src={folderLogo} />}
-          title={
-            <React.Fragment>
-              <div className="row m-0 justify-content-between">
-                {folder.name === "" ? "[DIR]" : folder.name}
-                {<i
-                  style={{ cursor: 'pointer' }}
-                  onClick={() => removePins(folder.cid)}
-                  className=" text-danger fa fa-thumb-tack">
+      return <a href={`http://localhost:8080/ipfs/${folder.cid}`} target="_blank">
+        <Card key={index} style={{ width: 490, marginTop: 16, cursor: 'pointer' }} loading={false}>
+          <Meta
+            avatar={<Avatar shape="square" src={folderLogo} />}
+            title={
+              <React.Fragment>
+                <div className="row m-0 justify-content-between">
+                  {folder.name === "" ? "[DIR]" : folder.name}
+                  {<i
+                    style={{ cursor: 'pointer' }}
+                    onClick={() => removePins(folder.cid)}
+                    className=" text-danger fa fa-thumb-tack">
 
-                </i>}
-              </div>
-            </React.Fragment>
-          }
-          description={folder.cid}
-        />
-      </Card>
+                  </i>}
+                </div>
+              </React.Fragment>
+            }
+            description={folder.cid}
+          />
+        </Card>
+      </a>
     })
 
     files.length == 0 ? files = <Empty /> : null
