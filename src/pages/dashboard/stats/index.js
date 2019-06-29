@@ -15,7 +15,7 @@ class Stats extends Component {
 
   componentWillMount() {
     this.props.getAllStats()
-    this.interval = setInterval(this.props.getAllStats, 5000)
+    this.interval = setInterval(this.props.getAllStats, 2000)
   }
 
   componentWillUnmount() {
@@ -101,8 +101,13 @@ class Stats extends Component {
           title={
             <React.Fragment>
               <div className="row m-0 justify-content-between">
-                {peer.peername || "Anonymous"}
-                {cluster.id != peer.id ? null : <i onClick={removeClusterPeer(peer.id)} className=" text-danger fa fa-times"></i>}
+                {peer.peername || `Cluster Peer ${index}`}
+                {cluster.id != peer.id ? null :
+                  <i
+                    style={{ cursor: 'pointer' }}
+                    onClick={() => removeClusterPeer(peer.id)}
+                    className=" text-danger fa fa-times"></i>
+                }
               </div>
             </React.Fragment>
           }
@@ -179,9 +184,6 @@ class Stats extends Component {
             </div>
           </Row>
         </Card>
-
-
-
 
         <Row>
           <Col md={12}>

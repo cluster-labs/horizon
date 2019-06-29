@@ -45,8 +45,18 @@ const addPins = (args, options) => {
     return ipfsCluster.pins.ls(args, options)
 }
 
-const removePins = (args, options) => {
-    return ipfsCluster.pins.rm(args, options)
+const removePins = cid => dispatch => {
+    ipfsCluster.pin.rm(cid, (err) => {
+        if (err) {
+            console.error(`Error while unpinning cid: ${cid}`)
+        }
+        else {
+            dispatch({
+                type: types.RMPIN,
+                payload: cid
+            })
+        }
+    })
 }
 
 const sync = (args, options) => {
@@ -116,10 +126,10 @@ const getFileStructure = payload => dispatch => {
 
             console.log("PINS: ", data[2])
 
-            pins = data[2].map((pin) => clusterPinToIpfsPin(pin))
+            pins = data[2]
             var statPromises = [];
             for (var i = 0; i < pins.length; i++) {
-                var statReq = ipfs.object.stat(pins[i].Hash['/']);
+                var statReq = ipfs.object.stat(pins[i].cid['/']);
                 statPromises.push(statReq);
             }
             return Promise.all(statPromises)
@@ -131,7 +141,7 @@ const getFileStructure = payload => dispatch => {
                 if (stat.NumLinks > 0) {
                     //Not Files
                     //unmarshall the Not Files to explore it's type
-                    objectDataPromises[i] = ipfs.object.data(pins[i].Hash['/'])
+                    objectDataPromises[i] = ipfs.object.data(pins[i].cid['/'])
                 } else {
                     //Files
                     //set isDir=false
